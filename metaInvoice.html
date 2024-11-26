@@ -24,13 +24,13 @@
 <script src="https://unpkg.com/jspdf-invoice-template@1.4.0/dist/index.js"></script>
 <script>
     function generatePDF(){
-        var pdfObject = jsPDFInvoiceTemplate.default(props); //returns number of pages created
+        const pdfObject = jsPDFInvoiceTemplate.default(props); //returns number of pages created
 
         console.log("Object created: ", pdfObject);
 
     }
     
-    var props = {
+    const props = {
     outputType: jsPDFInvoiceTemplate.OutputType.Save,
     onJsPDFDocCreation?: (jsPDFDoc: jsPDF) => void, //Allows for additional configuration writing among others, adds support for different languages and symbols
     returnJsPDFDocObject: true,
