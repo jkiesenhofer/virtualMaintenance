@@ -32,7 +32,14 @@
         // The parseInt method parses a value as a string 
         // and returns an integer as prompt displays a dialog box for the user,
         // if no input is given it returns null.
+        
         let n1 = 0, n2 = 1, nextTerm;
+
+        // Test new object with a logical identifier type function.
+        function test() {}
+        test.prototype.A = function () {
+          console.log("A");
+        };
 
         console.log('Fibonacci Series:');
 
@@ -41,12 +48,6 @@
             nextTerm = n1 + n2;
             n1 = n2;
             n2 = nextTerm;
-                    
-        // Test new object with a logical identifier type function.
-        function test() {}
-        test.prototype.A = function () {
-          console.log("A");
-        };
             
         // const test = new Test();
         // console.log(test.__proto__ == Test.prototype);
