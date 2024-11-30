@@ -41,6 +41,20 @@
             nextTerm = n1 + n2;
             n1 = n2;
             n2 = nextTerm;
+
+        function Test() {}
+        Test.prototype.myName = function () {
+          console.log("myName");
+        };
+
+        const test = new Test();
+        console.log(test.__proto__ === Test.prototype); // true
+        test.myName(); // myName
+
+        const obj = {};
+        obj.__proto__ = Test.prototype;
+        obj.myName(); // myName
+
 }
 
 </script>
