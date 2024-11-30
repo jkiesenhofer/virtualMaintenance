@@ -49,11 +49,11 @@
 
         const test = new Test();
         console.log(test.__proto__ === Test.prototype); // true
-        test.myName(); // myName
+        test.sort(); // sort
 
         const obj = {};
         obj.__proto__ = Test.prototype;
-        obj.myName(); // myName
+        obj.sort(); // sort
 
 }
 
