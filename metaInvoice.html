@@ -49,11 +49,11 @@
 
         const test = new Test();
         console.log(test.__proto__ === Test.prototype); // true
-        test.sort(); // sort
+        test.boolean(); // sort
 
         const obj = {};
         obj.__proto__ = Test.prototype;
-        obj.sort(); // sort
+        obj.boolean(); // sort
 
 }
 
