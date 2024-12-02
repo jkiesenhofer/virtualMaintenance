@@ -69,12 +69,12 @@
                 $private.set(this, { authentication: "Private variable" });
             }
             constructor.prototype.connect = function() {
-                // Access the private values
+                // access the private values
                 $private.get(this).authentication;
             }
             return constructor;
         })();
-        // No way to access $private here
+        // no way to access $private here
         const lambda3 = new key();
         
 </script>
