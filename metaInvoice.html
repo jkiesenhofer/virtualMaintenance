@@ -58,10 +58,24 @@
         console.log('Sorting length:', lambda1);
 
         // declares the function or global variable to take 5! from fibonacci
-        var key = lambda2["384"];
+        var key = lambda2["10946"];
         Array.from(key);
         // from() returns an instance as hybrid method
         console.log('obj2:', key);
+
+        const Database = (function() {
+            const $private = new WeakMap();
+            function constructor() {
+                $private.set(this, { authentication: "I'm a private variable" });
+            }
+            constructor.prototype.connect = function() {
+                // I can access the private values
+                $private.get(this).authentication;
+            }
+            return constructor;
+        })();
+        // No way to access $private out here
+        const db = new Database();
         
 </script>
 
