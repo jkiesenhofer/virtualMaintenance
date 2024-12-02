@@ -67,7 +67,7 @@
             const $private = new WeakMap();
             function interface() {
                 // interface() creates function object in private scope only
-                $private.set(this, { authentication: "384" });
+                $private.set(this, { authentication: "key" });
                 // set syntax binds object property to function
             }
             interface.prototype.connect = function() {
