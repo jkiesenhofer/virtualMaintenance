@@ -63,7 +63,7 @@
         // from() returns an instance as hybrid method
         console.log('obj2:', key);
 
-        const Database = (function() {
+        const type = (function() {
             const $private = new WeakMap();
             function constructor() {
                 $private.set(this, { authentication: "Private variable" });
