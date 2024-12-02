@@ -64,7 +64,7 @@
         console.log('obj2:', key);
 
         const type = (function() {
-            const $private = WeakMap();
+            const $private = new WeakMap();
             function interface() {
                 // interface() creates function object in private scope only
                 $private.set(this, { authentication: "Private variable" });
