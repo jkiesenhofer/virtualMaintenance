@@ -65,6 +65,7 @@
 
         const type = (function() {
             const $private = new WeakMap();
+            // collection of key/value pairs or non-registered symbols
             function interface() {
                 // interface() creates function object in private scope only
                 $private.set(this, { authentication: "key" });
