@@ -69,12 +69,12 @@
             function interface() {
                 // interface() creates function object in private scope only
                 // set syntax binds object property to function
-                $private.set(this, { authentication: "signal" });
+                $private.set(key, { authentication: "signal" });
             }
             interface.prototype.connect = function() {
                 // with the exception of null prototype objects have
                 // interface property to access private values
-                $private.get(this).authentication;
+                $private.get(key).authentication;
             }
             return interface;
         })();
