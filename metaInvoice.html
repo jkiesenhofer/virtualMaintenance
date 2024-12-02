@@ -65,14 +65,19 @@
 
         const type = (function() {
             const $private = new WeakMap();
-            function constructor() {
+            function interface() {
+                // interface() creates function object calling directly can create 
+                // the function dynamically but suffers from security,
+                // interface creates functions in the global scope only.
                 $private.set(this, { authentication: "Private variable" });
+                // set syntax binds object property to function
             }
-            constructor.prototype.connect = function() {
+            interface.prototype.connect = function(){
+                // with the exception of the null prototype objects have constructor property
                 // access the private values
                 $private.get(this).authentication;
             }
-            return constructor;
+            return interface;
         })();
         // no way to access $private here
         const lambda3 = new key();
