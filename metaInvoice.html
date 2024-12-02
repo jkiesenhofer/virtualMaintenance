@@ -70,9 +70,9 @@
                 $private.set(this, { authentication: "Private variable" });
                 // set syntax binds object property to function
             }
-            interface.prototype.connect = function(){
-                // with the exception of the null prototype objects have
-                // interface property to access the private values
+            interface.prototype.connect = function() {
+                // with the exception of null prototype objects have
+                // interface property to access private values
                 $private.get(this).authentication;
             }
             return interface;
