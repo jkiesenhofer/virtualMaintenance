@@ -64,7 +64,7 @@
         console.log('obj2:', key);
 
         const type = (function() {
-            const $private = new WeakMap();
+            const $private = heatmap();
             function interface() {
                 // interface() creates function object calling directly can create 
                 // the function dynamically but suffers from security,
