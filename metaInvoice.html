@@ -66,9 +66,8 @@
         const type = (function() {
             const $private = WeakMap();
             function interface() {
-                // interface() creates function object calling directly can create 
-                // the function dynamically but suffers from security,
-                // interface creates functions in the global scope only.
+                // interface() creates function object directly,
+                // interface creates functions in the private scope only.
                 $private.set(this, { authentication: "Private variable" });
                 // set syntax binds object property to function
             }
