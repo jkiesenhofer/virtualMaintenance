@@ -66,15 +66,15 @@
         const Database = (function() {
             const $private = new WeakMap();
             function constructor() {
-                $private.set(this, { authentication: "I'm a private variable" });
+                $private.set(this, { authentication: "Private variable" });
             }
             constructor.prototype.connect = function() {
-                // I can access the private values
+                // Access the private values
                 $private.get(this).authentication;
             }
             return constructor;
         })();
-        // No way to access $private out here
+        // No way to access $private here
         const db = new Database();
         
 </script>
