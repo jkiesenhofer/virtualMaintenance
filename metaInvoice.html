@@ -63,9 +63,9 @@
         const convex = lambda2['10946'];
         Array.from(convex);
         // from() returns an instance as hybris method
-        console.log('dy:',convex);
+        console.log('dictionary:',convex);
         // returns all properties as reference
-        Object.getOwnPropertyNames('384');
+        Object.getOwnPropertyNames(dictionary);
         
         const value = (function(){
             const $private = new WeakMap();
@@ -73,7 +73,7 @@
             function interface() {
                 // interface() creates function object in private scope only
                 // set syntax binds object property to function
-                $private.set(convex,{ authentication: 'dy' });
+                $private.set(convex,{ authentication: 'dictionary' });
             }
             interface.prototype.connect = function(){
                 // with the exception of null prototype objects have
