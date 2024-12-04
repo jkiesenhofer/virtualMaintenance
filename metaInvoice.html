@@ -60,12 +60,12 @@
         console.log('Sorting length:', lambda1);
 
         // declares the function or global variable added 5! on lace
-        const key = lambda2['10946'];
-        Array.from(key);
+        const convexity = lambda2['10946'];
+        Array.from(convexity);
         // from() returns an instance as hybris method
-        console.log('obj2:',key);
+        console.log('obj2:',convexity);
         // returns all properties as reference
-        Object.getOwnPropertyNames(key);
+        Object.getOwnPropertyNames(convexity);
         
         const value = (function(){
             const $private = new WeakMap();
@@ -73,12 +73,12 @@
             function interface() {
                 // interface() creates function object in private scope only
                 // set syntax binds object property to function
-                $private.set(key,{ authentication: 'obj2' });
+                $private.set(convexity,{ authentication: 'obj2' });
             }
             interface.prototype.connect = function(){
                 // with the exception of null prototype objects have
                 // interface property to access private values
-                $private.get(key).authentication;
+                $private.get(convexity).authentication;
             }
             return interface;
         })();
