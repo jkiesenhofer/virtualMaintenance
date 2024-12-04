@@ -64,10 +64,9 @@
         Array.from(key);
         // from() returns an instance as hybris method
         console.log('obj2:',key);
-        //Object.getOwnPropertyNames(object)
-        console(Object.getOwnPropertyNames(object));
         // returns all properties as an array
-
+        console(Object.getOwnPropertyNames(keys));
+        
         const value = (function(){
             const $private = new WeakMap();
             // collection of key/value pairs or non-registered symbols
