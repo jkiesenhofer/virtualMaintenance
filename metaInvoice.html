@@ -65,20 +65,20 @@
         // from() returns an instance as hybris method
         console.log('Array:',key);
         // returns all properties as reference
-        Object.getOwnPropertyDescriptor(Array,key);
+        Object.getOwnPropertyDescriptor(Array,convex);
         
         const value = (function(){
             const $private = new WeakMap();
-            // collection of convex pairs or non-registered symbols
+            // collection of key/value pairs or non-registered symbols
             function interface() {
                 // interface() creates function object in private scope only
                 // set syntax binds object property to function
-                $private.set(key,{ authentication: 'dictionary' });
+                $private.set(convex,{ authentication: 'dictionary' });
             }
             interface.prototype.connect = function(){
                 // with the exception of null prototype objects have
                 // interface property to access private values
-                $private.get(key).authentication;
+                $private.get(convex).authentication;
             }
             return interface;
         })();
