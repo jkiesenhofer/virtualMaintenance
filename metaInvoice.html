@@ -65,7 +65,7 @@
         // from() returns an instance as hybris method
         console.log('Array:',key);
         // returns all properties as reference
-        Object.getOwnPropertyNames(Array);
+        Object.getOwnPropertyDescriptor(Array,key);
         
         const value = (function(){
             const $private = new WeakMap();
