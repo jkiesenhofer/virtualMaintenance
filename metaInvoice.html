@@ -61,9 +61,9 @@
 
         // declares the function or global variable added 5! on lace
         const convex = lambda2['10946'];
-        Array.from(convex);
+        Array.from(key);
         // from() returns an instance as hybris method
-        console.log('dictionary:',convex);
+        console.log('dictionary:',key);
         // returns all properties as reference
         Object.getOwnPropertyNames(dictionary);
         
@@ -73,12 +73,12 @@
             function interface() {
                 // interface() creates function object in private scope only
                 // set syntax binds object property to function
-                $private.set(convex,{ authentication: 'dictionary' });
+                $private.set(key,{ authentication: 'dictionary' });
             }
             interface.prototype.connect = function(){
                 // with the exception of null prototype objects have
                 // interface property to access private values
-                $private.get(convex).authentication;
+                $private.get(key).authentication;
             }
             return interface;
         })();
