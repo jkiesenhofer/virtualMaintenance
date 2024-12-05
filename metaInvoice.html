@@ -78,7 +78,7 @@
           console.log("The number is",cashflow2[j]);
         }
 
-        var cashflow3 = [cashflow1,cashflow2];
+        var $private = [cashflow1,cashflow2];
         // declares variable assigned to two constructors without semicolon
         
       /*const E_inc = (function(){
@@ -87,12 +87,12 @@
             function interface() {
                 // interface() creates function object in private scope only
                 // set syntax binds object property to function
-                $private.set(cashflow3,{ authentication: 'dictionary' });
+                $private.set(cashflow1,{ authentication: 'dictionary' });
             }
             interface.prototype.connect = function(){
                 // with the exception of null prototype objects have
                 // interface property to access private values
-                $private.get(cashflow3).authentication;
+                $private.get(cashflow2).authentication;
             }
             return interface;
         })();
