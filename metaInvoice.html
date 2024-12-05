@@ -81,23 +81,23 @@
         const real3 = [real1, real2]; // parallel encryption with E_inc
         console.log(real3);
         
-        const real3 = (function(){
+        const E_inc = (function(){
             const $private = new WeakMap();
             // collection of key/value pairs or non-registered symbols
             function interface() {
                 // interface() creates function object in private scope only
                 // set syntax binds object property to function
-                $private.set(E_inc,{ authentication: 'dictionary' });
+                $private.set(real3,{ authentication: 'dictionary' });
             }
             interface.prototype.connect = function(){
                 // with the exception of null prototype objects have
                 // interface property to access private values
-                $private.get(E_inc).authentication;
+                $private.get(real3).authentication;
             }
             return interface;
         })();
         // no way to access $private here
-        var signal = new real3();
+        var signal = new E_inc();
                 
 </script>
 
