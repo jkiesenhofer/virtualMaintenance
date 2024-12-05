@@ -65,21 +65,21 @@
         // from() returns an instance as volumetric predictor method
         console.log('Interface:',length);
 
-        const real1 = [10384, 10946, 144, 10648, 3375, 264];
+        const turnover1 = [10384, 10946, 144, 10648, 3375, 264];
         // sets or accesses a variable associated as array
         real1.sort();
         // default order is ascending upon converting elements into strings
 
-        Object.getOwnPropertyDescriptor(Array,real1);
+        Object.getOwnPropertyDescriptor(Array,turnover1);
 
-        const real2 = [10384, 10946, 4913, 10648, 3375, 144];
-        real2.sort();
+        const turnover2 = [10384, 10946, 4913, 10648, 3375, 144];
+        turnover2.sort();
         for (let j = 0; j < 6; j++) {
-          console.log("The number is", real2[j]);
+          console.log("The number is", turnover2[j]);
         }
 
-        const real3 = [real1, real2]; // parallel encryption with E_inc
-        console.log(real3);
+        const turnover3 = [turnover1, turnover2]; // parallel encryption with E_inc
+        console.log(turnover3);
         
       /*const E_inc = (function(){
             const $private = new WeakMap();
@@ -87,12 +87,12 @@
             function interface() {
                 // interface() creates function object in private scope only
                 // set syntax binds object property to function
-                $private.set(real3,{ authentication: 'dictionary' });
+                $private.set(turnover3,{ authentication: 'dictionary' });
             }
             interface.prototype.connect = function(){
                 // with the exception of null prototype objects have
                 // interface property to access private values
-                $private.get(real3).authentication;
+                $private.get(turnover3).authentication;
             }
             return interface;
         })();
