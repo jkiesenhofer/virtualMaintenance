@@ -87,6 +87,10 @@
         //     E = zeros (nz+1,plots);   % e−field in space
         //     H = zeros (nz,plots);     % h−field in space
         //     S = zeros (nz,plots);     % poynting vector
+
+        for (let i = 0; i < 5; i++) {
+          text += "The number is " + real[i] + "<br>";
+        }
         
         const value = (function(){
             const $private = new WeakMap();
