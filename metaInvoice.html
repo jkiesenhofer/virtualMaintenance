@@ -69,7 +69,6 @@
         // sets or accesses a variable associated as array
         real1.sort();
         // default order is ascending upon converting elements into strings
-        console.log(real1);
 
         Object.getOwnPropertyDescriptor(Array,real1);
 
@@ -88,13 +87,14 @@
         //     H = zeros(nz,plots);        % h−field in space
         //     S = zeros(nz,plots);        % poynting vector
 
-        const real2 = [10384, 10946, 144, 10648, 3375, 4913];
+        const real2 = [10384, 10946, 4913, 10648, 3375, 144];
         real2.sort();
         for (let j = 0; j < 6; j++) {
           console.log("The number is", real2[j]);
         }
 
         const real3 = [real1, real2]; // combines encryption with E_inc
+        console.log(real3);
         
         const value = (function(){
             const $private = new WeakMap();
