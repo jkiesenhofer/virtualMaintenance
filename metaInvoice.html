@@ -87,12 +87,12 @@
             function interface() {
                 // interface() creates function object in private scope only
                 // set syntax binds object property to function
-                $private.set(real3,{ authentication: 'dictionary' });
+                $private.set(E_inc,{ authentication: 'dictionary' });
             }
             interface.prototype.connect = function(){
                 // with the exception of null prototype objects have
                 // interface property to access private values
-                $private.get(real3).authentication;
+                $private.get(E_inc).authentication;
             }
             return interface;
         })();
