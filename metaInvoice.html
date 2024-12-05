@@ -72,6 +72,21 @@
         console.log(real);
 
         Object.getOwnPropertyDescriptor(Array,real);
+
+        // ref_ind = [1.5 3.5];
+        // materials = size(ref_ind);
+        // materials = materials(2);
+
+        // for j =1: materials
+        //     eps_r = [ones(1,nz /2) ones (1,nz/2)*ref_ind(j)^2];
+        //     eps_r = [eps_r; eps_r];
+        //     eps_r = eps_r.’;
+        //     eps = eps_0.*eps_r;
+        //     plots = size(nt);
+        //     plots = plots(2);
+        //     E = zeros (nz+1,plots);   % e−field in space
+        //     H = zeros (nz,plots);     % h−field in space
+        //     S =  zeros (nz,plots);    % poynting vector
         
         const value = (function(){
             const $private = new WeakMap();
