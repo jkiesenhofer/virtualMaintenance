@@ -114,7 +114,7 @@
     outputType: jsPDFInvoiceTemplate.OutputType.Save,
     //onJsPDFDocCreation?: (jsPDFDoc: jsPDF) => void, //Allows for additional configuration writing among others, adds support for different languages and symbols
     returnJsPDFDocObject: true,
-    fileName: "Invoice 2021",
+    fileName: "Invoice 2024",
     orientationLandscape: false,
     compress: true,
     logo: {
@@ -139,12 +139,12 @@
         }
     },
     business: {
-        name: "Business Name",
+        name: "Fluidmotion Mechatronics GmbH",
         address: "Albania, Tirane ish-Dogana, Durres 2001",
         phone: "(+355) 069 11 11 111",
-        email: "email@example.com",
-        email_1: "info@example.al",
-        website: "www.example.al",
+        email: "service@fluidmotion.at",
+        email_1: "info@fluidmotion.at",
+        website: "www.fluidmotion.at",
     },
     contact: {
         label: "Invoice issued for:",
@@ -187,12 +187,12 @@
         ],
         table: Array.from(Array(10), (item, index)=>([
             index + 1,
-            "There are many variations ",
-            "Lorem Ipsum is simply dummy text dummy text ",
-            200.5,
-            4.5,
-            "m2",
-            400.5
+            "Standard variation ",
+            "FM-Vabe 400 ",
+            200,
+            45,
+            "pieces",
+            400
         ])),
         additionalRows: [{
             col1: 'Total:',
