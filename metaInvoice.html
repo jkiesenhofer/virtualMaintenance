@@ -230,13 +230,6 @@
 //example: create a PDF using the template
 var pdfCreated = jsPDFInvoiceTemplate.default(props);
 
-//add new page or new content -> see jsPDF documentation
-pdfCreated.jsPDFDocObject.addPage();
-pdfCreated.jsPDFDocObject.text("Test text", 10, 50);
-//...
-
-pdfCreated.jsPDFDocObject.save(); //or .output('<outputTypeHere>');
-
 </script>
 
 </body>
