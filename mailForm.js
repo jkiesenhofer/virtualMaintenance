@@ -10,11 +10,11 @@ function emailSend(){
 	"<br/> Phone " + phone +
 	"<br/> Email " + email;
 	Email.send({
-    Host : "smtp.elasticemail.lu",
-    Username : "host@gmail.lu",
+    Host : "smtp.fluidmotion.hu",
+    Username : "host@fluidmotion.hu",
     Password : "Password",
-    To : 'reviever@gmail.lu',
-    From : "website@gmail.lu",
+    To : 'reviever@fluidmotion.hu',
+    From : "website@fluidmotion.hu",
     Subject : "This is the subject",
     Body : messageBody
 }).then(
@@ -28,4 +28,3 @@ function emailSend(){
   }
 );
 }
-
