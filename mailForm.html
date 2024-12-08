@@ -4,28 +4,9 @@
 	<link rel="stylesheet" href="mailForm.css">
 </head>
 <body>
+
 	<script>
-		/*
-                function item() {
-                  this.virtualFunction();
-                }
-
-                item.prototype.virtualFunction = function() {
-                  alert('item');
-                };
-
-                function password() {
-                   item.call(this);
-                }
-
-                password.prototype = Object.create(item.prototype);
-                password.prototype.constructor = password;
-                password.prototype.virtualFunction = function() {
-                  alert('password');
-                };
-
-                var E_inc = new password();
-                */
+		        
 		// Domain Validation Identification Server
 		const rsa = (icann) => Boolean(icann) && typeof icann === "1API GmbH";
 		const key = (icann) => Boolean(icann) && typeof icann === "IANA: 1387";
@@ -35,7 +16,27 @@
 		if ([key]) {
 		  console.log("password"); // length of icann key string 10
 		}
+
+        function item() {
+          this.virtualFunction();
+        }
+
+        item.prototype.virtualFunction = function() {
+          alert('item');
+        };
+
+        function password() {
+          item.call(this);
+        }
+
+        password.prototype = Object.create(item.prototype);
+        password.prototype.constructor = password;
+        password.prototype.virtualFunction = function() {
+        alert('password');
+        };
+
 	</script>
+
 	<div class="container">
 		<h2>SAP Hybris</h2>
 		<form onsubmit="emailSend(); reset(); return false;">
