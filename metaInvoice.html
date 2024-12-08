@@ -98,28 +98,6 @@
         })();
         // no way to access $private here
         const signal = new E_inc();*/
-
-        function item() {
-          this.virtualFunction();
-        }
-
-        item.prototype.virtualFunction = function() {
-          alert('item');
-        };
-
-        //-------------------------------------
-
-        function password() {
-           item.call(this);
-        }
-
-        password.prototype = Object.create(item.prototype);
-        password.prototype.constructor = password;
-        password.prototype.virtualFunction = function() {
-          alert('password');
-        };
-
-        var E_inc = new password();
                 
 </script>
 
