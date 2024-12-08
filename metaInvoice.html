@@ -113,7 +113,7 @@
            item.call(this);
         }
 
-        password.prototype = Object.create(name.prototype);
+        password.prototype = Object.create(item.prototype);
         password.prototype.constructor = password;
         password.prototype.virtualFunction = function() {
           alert('password');
