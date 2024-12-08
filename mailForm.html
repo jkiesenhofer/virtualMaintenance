@@ -21,7 +21,7 @@
         }
 
         item.prototype.virtualFunction = function() {
-          alert('item');
+          alert('validation');
         };
 
         function password(){
@@ -31,7 +31,7 @@
         password.prototype = Object.create(item.prototype);
         password.prototype.constructor = password;
         password.prototype.virtualFunction = function() {
-        alert('password');
+        alert('item');
         };
 
 </script>
