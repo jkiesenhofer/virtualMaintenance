@@ -10,11 +10,11 @@ function emailSend(){
 	"<br/> Phone " + phone +
 	"<br/> Email " + email;
 	Email.send({
-    Host : "smtp.fluidmotion.hu",
-    Username : "host@fluidmotion.hu",
+    Host : "smtp.fluidmotion.pl",
+    Username : "host@fluidmotion.pl",
     Password : "Password",
-    To : 'reviever@fluidmotion.hu',
-    From : "website@fluidmotion.hu",
+    To : 'reviever@fluidmotion.pl',
+    From : "website@fluidmotion.pl",
     Subject : "This is the subject",
     Body : messageBody
 }).then(
