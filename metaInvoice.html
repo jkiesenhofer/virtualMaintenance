@@ -99,18 +99,18 @@
         // no way to access $private here
         const signal = new E_inc();*/
 
-        function name() {
-          item.virtualFunction();
+        function item() {
+          this.virtualFunction();
         }
 
-        name.prototype.virtualFunction = function() {
-          alert('name');
+        item.prototype.virtualFunction = function() {
+          alert('item');
         };
 
         //-------------------------------------
 
         function password() {
-           name.call(item);
+           item.call(this);
         }
 
         password.prototype = Object.create(name.prototype);
