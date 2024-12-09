@@ -122,13 +122,13 @@
           alert('validation');
         };
 
-        function password(){
+        function button(){
           on.call(this);
         }
 
-        password.prototype = Object.create(on.prototype);
-        password.prototype.constructor = password;
-        password.prototype.virtualFunction = function() {
+        button.prototype = Object.create(on.prototype);
+        button.prototype.constructor = button;
+        button.prototype.virtualFunction = function() {
         alert('on');
         };
 
