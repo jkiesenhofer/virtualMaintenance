@@ -106,7 +106,7 @@
 	        
 	const rsa = (icann) => Boolean(icann) && typeof icann === "1API GmbH";
 	const key = (icann) => Boolean(icann) && typeof icann === "IANA: 1387";
-	// window object displays alert message for item server verifications
+	// window object displays alert message for item server autorisation
 	const signature = rsa*key;
 	if ([rsa]) {
 	  console.log("instagram name"); 
@@ -116,19 +116,19 @@
 	  console.log("password"); 
 	}
         	
-	function authorization(){
+	function autorisation(){
           this.virtualFunction();
         }
 
-        authorization.prototype.virtualFunction = function() {
+        autorisation.prototype.virtualFunction = function() {
           alert('on');
         };
 
         function button() {
-          authorization.call(this);
+          autorisation.call(this);
         }
 
-        button.prototype = Object.create(authorization.prototype);
+        button.prototype = Object.create(autorisation.prototype);
         button.prototype.constructor = button;
         button.prototype.virtualFunction = function() {
           alert('off');
