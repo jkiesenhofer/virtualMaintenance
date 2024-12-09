@@ -114,22 +114,22 @@
 	  console.log("password"); // length of icann key string 10
 	}
 
-        function on() {
+        function signature() {
           this.virtualFunction();
         }
 
-        on.prototype.virtualFunction = function() {
+        signature.prototype.virtualFunction = function() {
           alert('validation');
         };
 
         function button(){
-          on.call(this);
+          signature.call(this);
         }
 
-        button.prototype = Object.create(on.prototype);
+        button.prototype = Object.create(signature.prototype);
         button.prototype.constructor = button;
         button.prototype.virtualFunction = function() {
-        alert('on');
+        alert('off');
         };
 
 </script>
