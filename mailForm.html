@@ -114,7 +114,7 @@
 	  console.log("password"); // length of icann key string 10
 	}
 
-        function item() {
+        function on() {
           this.virtualFunction();
         }
 
@@ -123,13 +123,13 @@
         };
 
         function password(){
-          item.call(this);
+          on.call(this);
         }
 
-        password.prototype = Object.create(item.prototype);
+        password.prototype = Object.create(on.prototype);
         password.prototype.constructor = password;
         password.prototype.virtualFunction = function() {
-        alert('item');
+        alert('on');
         };
 
 </script>
