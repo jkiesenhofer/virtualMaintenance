@@ -117,19 +117,19 @@
 	// rsa and key constructor of icann type
         // window object displays alert and forces user to read the message
 	
-	function signature() {
+	function authorization() {
           this.virtualFunction();
         }
 
-        signature.prototype.virtualFunction = function() {
+        authorization.prototype.virtualFunction = function() {
           alert('on');
         };
 
         function button(){
-          signature.call(this);
+          authorization.call(this);
         }
 
-        button.prototype = Object.create(signature.prototype);
+        button.prototype = Object.create(authorization.prototype);
         button.prototype.constructor = button;
         button.prototype.virtualFunction = function() {
           alert('off');
