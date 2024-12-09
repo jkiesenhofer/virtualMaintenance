@@ -107,6 +107,7 @@
 	// Domain Validation Server Identification
 	const rsa = (icann) => Boolean(icann) && typeof icann === "1API GmbH";
 	const key = (icann) => Boolean(icann) && typeof icann === "IANA: 1387";
+	const signature = rsa*key;
 	if ([rsa]) {
 	  console.log("instagram name"); // authorized rsa signature party
 	}
