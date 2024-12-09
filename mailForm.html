@@ -3,14 +3,14 @@
 <head>
 	<link rel="stylesheet" href="mailForm.css">
 </head>
-<!--<body style="background-color:#902c94;">-->
+        <!--<body style="background-color:#902c94;">-->
 <body>
-    <!--
-    <font color="white" face="Times New Roman" size="7" > Create virtual PDF invoice </font>
-    <form method="client">
-    <input type="button" value="Generate file" onclick="generatePDF()"/>
-    </form>
-    -->
+        <!--
+        <font color="white" face="Times New Roman" size="7" > Create virtual PDF invoice </font>
+        <form method="client">
+        <input type="button" value="Generate file" onclick="generatePDF()"/>
+        </form>
+        -->
 <script>
 
         let array = {};
@@ -150,10 +150,8 @@
 <script src="https://unpkg.com/jspdf-invoice-template@1.4.0/dist/index.js"></script>
 <script>
     function generatePDF(){
-        const pdfObject = jsPDFInvoiceTemplate.default(props); //returns number of pages
-
-        console.log("Object created: ", pdfObject);
-
+    const pdfObject = jsPDFInvoiceTemplate.default(props); //returns number of pages
+    console.log("Object created: ", pdfObject);
     }
     
     const props = {
