@@ -1,3 +1,16 @@
+var comapnyJSON={
+  CompanyName:'Fluidmotion Mechatronics LLS',
+  CompanyGSTIN:'37B76C238B7E1Z5',
+  CompanyState:'JORDAN (09)',
+  CompanyPAN:'B76C238B7E',
+  CompanyAddressLine1:'Irbid Business Center',
+  CompanyAddressLine2:'Al Jaish Street 61',
+  CompanyAddressLine3:'Floor 3',
+  PIN: '683584',
+  companyEmail:'service@fluidmotion.net',
+  companyPhno:'+918189457845',
+};
+/*
 function emailSend(){
 
 
@@ -27,4 +40,4 @@ function emailSend(){
   	}
   }
 );
-}
+}*/
