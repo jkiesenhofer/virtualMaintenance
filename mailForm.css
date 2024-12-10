@@ -28,7 +28,7 @@ body{
 	outline: none;
 }
 .btn{
-	border: none !important;
+	border: none;
 	cursor: pointer;
 	background-color: #902c94;
 	margin: 15px 0;
