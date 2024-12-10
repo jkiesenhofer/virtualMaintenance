@@ -1,5 +1,5 @@
 var comapnyJSON={
-  CompanyName:'Fluidmotion Mechatronics LLS',
+  CompanyName:'Fluidmotion Mechatronics LLC',
   CompanyGSTIN:'37B76C238B7E1Z5',
   CompanyState:'JORDAN (09)',
   CompanyPAN:'B76C238B7E',
