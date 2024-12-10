@@ -122,6 +122,7 @@
 
         function generatePDF(){
         const pdfObject = jsPDFInvoiceTemplate.default(props);
+	// json library is imported in browser via content delivery network
         console.log("Object created: ",pdfObject);
         }
     
