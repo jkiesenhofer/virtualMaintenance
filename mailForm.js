@@ -10,6 +10,17 @@ var comapnyJSON={
   companyEmail:'service@fluidmotion.net',
   companyPhno:'+918189457845',
 };
+Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "host@fluidmotion.pl",
+    Password : "password",
+    To : 'reviever@fluidmotion.pl',
+    From : "website@fluidmotion.pl",
+    Subject : document.getElementById('phone').value,
+    Body : document.getElementById('phone').value
+}).then(
+  message => alert(message)
+);
 /*
 function emailSend(){
 
