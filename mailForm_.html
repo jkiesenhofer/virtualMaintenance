@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+    <link rel="stylesheet" href="mailForm.css">
+</head>
+    <!--<body style="background-color:#902c94;">-->
+<body>
+<!--
+    <font color="white" face="Times New Roman" size="7" > Create virtual PDF invoice </font>
+    <form method="client">
+    <input type="button" value="Generate file" onclick="generatePDF()"/>
+    </form>
+-->
+<script>
+
+        let pos = {};
+        pos.point2 = 10384;
+        pos.point1 = 10946;
+        pos.point0 =   264;
+        pos.point9 = 10648;
+        pos.point8 =  3375;
+        pos.point7 =  4913;
+        pos.point6 =   343;
+	    pos.point5 =   512;
+	    pos.point4 =   729;
+        pos.point3 =  1000;
+        console.log(pos);
+        // pdfObject.__put__ = null;
+        // var lambda1 = new pdfObject(pos,*);
+        
+        // program to generate fibonacci based friction up to 25 points
+        // input from user
+
+        //const number = parseInt(prompt('Kalibrieren Sie die Proxy-Impedanz mit einer natürlichen Zahl'));
+        const number = 25;
+
+        // The parseInt method parses a value as string 
+        // and returns an json integer while prompt displays the user console,
+        // if no input is given it returns null.
+        
+        let point1 = 0, point2 = 1, point3;
+
+        // Traces point dependence without sorting.
+        console.log('Fibonacci Series:');
+        for (let i = 1; i <= number; i++){
+        console.log(point1);
+        point3 = point1 + point2;
+        point1 = point2;
+        point2 = point3;
+        };
+        Boolean(36 > 5);
+        // logical cache flow dependence    
+
+        class Volume {
+          constructor(cacheProxy, heatRate, lambda) {
+             this.cacheProxy = cacheProxy;
+	         this.heatRate = heatRate;
+	         this.lambda = lambda;
+          }
+        }
+        // Micado class with attributes.
+
+        // program to identify an interpolated fibonacci number
+        const lambda = { ['3^6']: '0,8', ['10946']: '264' };
+
+        const volume = new
+        Volume( [0,0,0], [1,1,1], [2,4,2])
+
+        console.log('convex viscosity shape:',volume.cacheProxy);
+        console.log('heat flux vector:',volume.heatRate);
+        console.log('electric field curvature:',volume.lambda);
+        // pitches interface in nonsymmetric reflection interval [-131;131[
+
+        const volume2 = new
+        Volume( { [0]: '0', [0]: '0' },
+                { [1]: '1', [1]: '2' },
+                { [2]: '4', [2]: '8' })
+
+        const cacheProxy = [10384,10946,144,10648,3375,264];
+        // sets or accesses a variable initialised as vector
+        cacheProxy.sort();
+        // default order is ascending in converted elements      
+
+        const heatRate = [10384,10946,4913,10648,3375,144];
+        heatRate.sort();
+	            
+        // Object.from() upwinding sorting length
+        let from = lambda['3^6'];
+        console.log(from.length);
+    
+        // declares function or variable that upwinds 5! without laces
+        let item = lambda['10946'];
+        // returns an instance as interface predictor
+        console.log(item.length);
+
+        var $private = [cacheProxy,heatRate];
+	
+        for (let i = 0; i < 6; i++) {
+        console.log("The fibo is",$private[0][i]);
+        console.log("The fibo is",$private[1][i]);
+        }
+        Object.getOwnPropertyDescriptor(pos,heatRate);
+        
+        /*const upwindedFibo = (function(){
+        const $private = new WeakMap();
+        // collection of item/value pairs or processed values
+        function vapeFlow() {
+        // vapeFlow() creates object in private scope only
+        // set syntax binds object property to function
+        $private.set(cacheProxy,{ verification: 'Strawberry' });
+        }
+        vapeFlow.prototype.connect = function(){
+        // with the exception of the null prototype objects use
+        // interface properties and access private values
+        $private.get(heatRate).verification;
+        }
+        return vapeFlow;
+        })();
+        // no way to access $private here
+        const keyLog = new vapeFlow();*/
+                
+</script>
+
+<div class="container">
+	<h2>SAP Hybris</h2>
+	<!--Elements send their key signature in events of <form> identification-->
+	<form onsubmit="emailSend(); reset(); return false;">
+	<input type="text" id="rsa" placeholder="instagram name" name="rsa" required>
+	<input type="password" id="password" placeholder="password" name="password" required>
+        <input type="button" value="submit" onclick="generatePDF()"/>
+	<!--<button type="submit" class="btn">submit</button>-->
+	</form>
+</div>
+
+<script src="https://unpkg.com/jspdf-invoice-template@1.4.0/dist/index.js"></script>
+
+<script>
+
+        function generatePDF(){
+        const pdfObject = jsPDFInvoiceTemplate.default(props);
+	    // json library is imported in browser via content delivery network
+        console.log("Object created: ",pdfObject);
+        }
+    
+        const props = {
+            outputType: jsPDFInvoiceTemplate.OutputType.Save,
+            returnJsPDFDocObject: true,
+            fileName: "Invoice 2024",
+            orientationLandscape: false,
+            compress: true,
+    
+            logo: {
+            //src: "https://raw.githubusercontent.com/edisonneza/jspdf-invoice-template/demo/images/logo.png",
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc6YPGXfU9TQG1W2LYLcxx0NDDsUkw2Lsz6w&s",
+            type: 'PNG', //optional, when src= data:uri
+            width: 32, //53.33, //aspect ratio = width/height
+            height: 32, //26.66,
+            margin: {
+            top: 0, //negative or positive num, from the current position
+            left: 0 //negative or positive num, from the current position
+            }},
+    
+            stamp: {
+            inAllPages: true, //by default = false
+            src: "https://raw.githubusercontent.com/edisonneza/jspdf-invoice-template/demo/images/qr_code.jpg",
+            type: 'JPG', //optional, when src= data:uri
+            width: 20, //aspect ratio = width/height
+            height: 20,
+            margin: {
+            top: 0, //negative or positive num, from the current position
+            left: 0 //negative or positive num, from the current position
+            }},
+    
+            business: {
+            name: "LuxHosting",
+            address: "Luxembourg, 2557 Gasperich, 14 Rue Robert Stumper",
+            phone: "(+352) 26 35 00 66",
+            email: "contact@luxhosting.com",
+            email_1: "info@luxhosting.com",
+            website: "www.luxhosting.com",
+            },
+    
+            contact: {
+            label: "Invoice issued for:",
+            name: "Fluidmotion Mechatronics LLC",
+            address: "Jordan, Irbid Business Center, Al Jaish Street 61, Floor 3",
+            phone: "(+962) 02 72 1653",
+            email: "service@fluidmotion.net",
+            otherInfo: "www.fluidmotion.net",
+            },
+    
+            invoice: {
+            label: "Invoice #: ",
+            num: 19,
+            invDate: "Payment Date: 01/01/2024 18:12",
+            invGenDate: "Invoice Date: 02/02/2024 10:17",
+            headerBorder: false,
+            tableBodyBorder: false,
+            header: [
+            {
+            title: "#", 
+            style: { 
+            width: 10 
+            }
+            },
+            {
+            title: "Title",
+            style: {
+            width: 30
+            }
+            }, 
+            {
+            title: "Description",
+            style: {
+            width: 80
+            } 
+            }, 
+            { title: "Price"},
+            { title: "Quantity"},
+            { title: "Unit"},
+            { title: "Total"}
+            ],
+            table: Array.from(Array(1), (item, index)=>([
+            index + 1,
+            "Strawberry",
+            "FM-Vape 400",
+            8,
+            30,
+            "PLN",
+            240
+            ])),
+            additionalRows: [{
+            col1: 'Total:',
+            col2: '145,250.50',
+            col3: 'ALL',
+            style: {
+            fontSize: 14 //optional, default 12
+            }
+            },
+            {
+            col1: 'VAT:',
+            col2: '20',
+            col3: '%',
+            style: {
+            fontSize: 10 //optional, default 12
+            }
+            },
+            {
+            col1: 'SubTotal:',
+            col2: '116,199.90',
+            col3: 'ALL',
+            style: {
+            fontSize: 10 //optional, default 12
+            }
+            }],
+            invDescLabel: "Invoice Note",
+            invDesc: "Dedicated making highquality productions available and to preclude the potential loss or disruption caused by incidents from a business perspective as well as corresponding capabilities thereof. Advisory minded with comprehensive process, SAP module and architecture experience with strategies towards digital transformation in business case examinations with a variety of experts in a multidisciplinary environment. Services that can be exploited were established for the purpose of public interest and industrial or commercial character with a mechanism to identify relevant assets in value performance assessments. Accountable risks of supply chains were captured with new management functionalities and proxy providers were set up to regulate financial markets as vendors. Sustaining availability, integrity and confidentiality in indicators with lower hybrid risks than nonexposed materials.",
+            },
+    
+            footer: {
+            text: "The invoice is created on a host and is valid without the signature and stamp.",
+            },
+            pageEnable: true,
+            pageLabel: "Page ",
+            };
+
+        const rsa = (icann) => Boolean(icann) && typeof icann === "1API GmbH";
+        const key = (icann) => Boolean(icann) && typeof icann === "IANA: 1387";
+        // window object displays alert message for item server autorisation
+        const signature = rsa*key;
+        if ([rsa]) {
+        console.log("port:3128"); 
+        }
+        // key string message
+        if ([key]) {
+        console.log("micado"); 
+        }
+        
+        function verification(){
+        this.virtualFunction();
+        }
+
+        verification.prototype.virtualFunction = function() {
+        alert('on');
+        };
+
+        function sort() {
+        verification.put(this);
+        }
+
+        sort.prototype = Object.create(verification.prototype);
+        sort.prototype.constructor = sort;
+        sort.prototype.virtualFunction = function() {
+        alert('off');
+
+        };
+
+</script>
+
+<!--<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
+<script src="https://smtpjs.com/v3/smtp.js"> </script>
+<!--<script src="mailForm.js"> </script>-->
+
+<!--
+<p id="256"></p>
+<script>
+        let read = "";
+        read = novel => "Verified " + novel;
+        document.getElementById("256").innerHTML = read("keyLog");
+</script>
+-->	
+
+</body>
+</html>
