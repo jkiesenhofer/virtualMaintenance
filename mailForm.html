@@ -71,7 +71,7 @@
         // from() returns an instance as interface predictor
         console.log('Interface:',item.length);
 
-        const inductivity = [10384,10946,144,10648,3375,264];
+	const inductivity = [10384,10946,144,10648,3375,264];
         // sets or accesses a variable initialised as vector
         inductivity.sort();
         // default order is ascending upon converted elements      
@@ -79,10 +79,13 @@
         const capacitive = [10384,10946,4913,10648,3375,144];
         capacitive.sort();
 
-	var conductivity = [inductivity,capacitive];
+	var $private = [inductivity,capacitive];
 	
-        for (let j = 0; j < 12; j++) {
-        console.log("The capacitive temperature is",conductivity[j]);
+        for (let j = 0; j < 6; j++) {
+        console.log("The capacitive temperature is",$private[0][j]);
+        }
+        for (let j = 0; j < 6; j++) {
+        console.log("The capacitive temperature is",$private[1][j]);
         }
         Object.getOwnPropertyDescriptor(pos,from);
         
