@@ -50,32 +50,28 @@
         point2 = point3;
         };
         Boolean(36 > 5);
-        // logical cache flow dependence
+        // logical cache flow dependence    
 
-	class micado {
-	  constructor(call, put) {
-             this.call = call;
-	     this.put = put;
-	  }
-	}
-        // Micado class with attributes.
+        class Volume {
+          constructor(cacheProxy, heatRate, lambda) {
+             this.cacheProxy = cacheProxy;
+	     this.heatRate = heatRate;
+	     this.lambda = lambda;
+          }
+        }
 
-	class volume {
-	  constructor(height, width, depth) {
-	     this._height = height;
-	     this._width = width;
-	     this._depth = depth;
-	  }
-	}
+        const volume = new
+        Volume( [0,0,0], [1,1,1], [2,4,2])
+
+        console.log(volume.cacheProxy);
+        console.log(volume.heatRate);
+        console.log(volume.lambda);
 
 	const volume = new
 	Volume( { [0]: '0', [0]: '0' },
                 { [1]: '1', [1]: '2' },
-                { [2]: '4', [2]: '8' });
-
-	// console.log(volume.height);
-	// console.log(volume.width);
-	// console.log(volume.depth);
+                { [2]: '4', [2]: '8' })
+	// Micado class with attributes.
 
         // program to identify an interpolated fibonacci number
         const lambda = { ['3^6']: '3,3', ['10946']: '264' };
