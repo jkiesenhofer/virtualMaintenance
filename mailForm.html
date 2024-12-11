@@ -52,9 +52,9 @@
         Boolean(36 > 9);
         // logical sorting flow dependence
 
-        // New object with micado type call.
+        // New object with micado type verification.
 	function fibo() {
-        micado.call(this);
+        micado.put(this);
         console.log(number);
         }
 
@@ -92,7 +92,7 @@
         function interface() {
         // interface() creates function object in private scope only
         // set syntax binds object property to function
-        $private.set(cashflow1,{ authentication: 'array' });
+        $private.set(cashflow1,{ authentication: 'fibo' });
         }
         interface.prototype.connect = function(){
         // with the exception of null prototype objects have
@@ -260,25 +260,24 @@
         if ([key]) {
         console.log("password"); 
         }
-        	
-        function autorisation(){
+        
+        function verification(){
         this.virtualFunction();
         }
 
-        autorisation.prototype.virtualFunction = function() {
+        verification.prototype.virtualFunction = function() {
         alert('on');
         };
 
         function sort() {
-        autorisation.call(this);
+        verification.put(this);
         }
 
-        sort.prototype = Object.create(autorisation.prototype);
+        sort.prototype = Object.create(verification.prototype);
         sort.prototype.constructor = sort;
         sort.prototype.virtualFunction = function() {
         alert('off');
 
-        //console.log(pdfObject.pdfobjectversion);
         };
 
 </script>
