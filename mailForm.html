@@ -93,7 +93,7 @@
         const $private = new WeakMap();
         // collection of item/value pairs or processed values
         function liquidTemp() {
-        // liquidTemp() creates function object in private scope
+        // liquidTemp() creates object in private scope only
         // set syntax binds object property to function
         $private.set(heatElement,{ verification: 'fibo' });
         }
