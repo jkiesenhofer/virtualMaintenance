@@ -71,15 +71,15 @@
         // from() returns an instance as interface predictor
         console.log('Interface:',item.length);
 
-	const shirt = [10384,10946,144,10648,3375,264];
+	const virtualShirt = [10384,10946,144,10648,3375,264];
         // sets or accesses a variable initialised as vector
-        shirt.sort();
+        virtualShirt.sort();
         // default order is ascending upon converted elements      
 
-        const sock = [10384,10946,4913,10648,3375,144];
-        sock.sort();
+        const virtualSock = [10384,10946,4913,10648,3375,144];
+        virtualSock.sort();
 
-	var $private = [shirt,sock];
+	var $private = [virtualShirt,virtualSock];
 	
         for (let j = 0; j < 6; j++) {
         console.log("The fibo is",$private[0][j]);
