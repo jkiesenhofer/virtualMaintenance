@@ -93,14 +93,14 @@
         const $private = new WeakMap();
         // collection of item/value pairs or processed values
         function liquidTemp() {
-        // liquidTemp() creates function object in private scope only
+        // liquidTemp() creates function object in private scope
         // set syntax binds object property to function
-        $private.set(heatElement,{ authentication: 'fibo' });
+        $private.set(heatElement,{ verification: 'fibo' });
         }
         liquidTemp.prototype.connect = function(){
-        // with the exception of the null prototype objects have
-        // interface properties to access private values
-        $private.get(vapeBattery).authentication;
+        // with the exception of the null prototype objects use
+        // interface properties and access private values
+        $private.get(vapeBattery).verification;
         }
         return liquidTemp;
         })();
