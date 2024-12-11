@@ -76,10 +76,10 @@
         heatElement.sort();
         // default order is ascending upon converted elements      
 
-        const vapeBattery = [10384,10946,4913,10648,3375,144];
+        const vapeFlow = [10384,10946,4913,10648,3375,144];
         vapeBattery.sort();
 
-	var $private = [heatElement,vapeBattery];
+	var $private = [heatElement,vapeFlow];
 	
         for (let j = 0; j < 6; j++) {
         console.log("The fibo is",$private[0][j]);
@@ -100,7 +100,7 @@
         liquidTemp.prototype.connect = function(){
         // with the exception of the null prototype objects use
         // interface properties and access private values
-        $private.get(vapeBattery).verification;
+        $private.get(vapeFlow).verification;
         }
         return liquidTemp;
         })();
