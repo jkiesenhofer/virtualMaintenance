@@ -52,11 +52,13 @@
         Boolean(36 > 5);
         // logical cache flow dependence
 
-        // Object with micado attribute.
-	function fibo() {
-        micado.put(this);
-        console.log(number);
-        }
+	class micado {
+	  constructor(call, put) {
+             this.call = call;
+	     this.call = put;
+	  }
+	}
+        // Class with micado attribute.
 
         // program to identify an interpolated fibonacci number
         const lambda = { ['3^6']: '3,3', ['10946']: '264' };
