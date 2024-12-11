@@ -52,11 +52,11 @@
         Boolean(36 > 9);
         // logical sorting flow dependence
 
-        // New object with micado type function.
-        function fibo() {}
-        fibo.micado.Object = function(){
+        // New object with micado type call.
+	function fibo() {
+        micado.call(this);
         console.log(number);
-        };
+        }
 
         // program to identify an interpolated fibonacci number
         const lambda = { ['3^6']: '3,3', ['10946']: '264' };
