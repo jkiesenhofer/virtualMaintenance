@@ -71,15 +71,15 @@
         // from() returns an instance as interface predictor
         console.log('Interface:',item.length);
 
-	const heatElement = [10384,10946,144,10648,3375,264];
+	const cacheProxy = [10384,10946,144,10648,3375,264];
         // sets or accesses a variable initialised as vector
         heatElement.sort();
         // default order is ascending upon converted elements      
 
-        const vapeFlow = [10384,10946,4913,10648,3375,144];
+        const heatRate = [10384,10946,4913,10648,3375,144];
         vapeBattery.sort();
 
-	var $private = [heatElement,vapeFlow];
+	var $private = [cacheProxy,heatRate];
 	
         for (let j = 0; j < 6; j++) {
         console.log("The fibo is",$private[0][j]);
@@ -92,20 +92,20 @@
         /*const upwindedFibo = (function(){
         const $private = new WeakMap();
         // collection of item/value pairs or processed values
-        function liquidTemp() {
-        // liquidTemp() creates object in private scope only
+        function vapeFlow() {
+        // vapeFlow() creates object in private scope only
         // set syntax binds object property to function
-        $private.set(heatElement,{ verification: 'fibo' });
+        $private.set(cacheProxy,{ verification: 'fibo' });
         }
-        liquidTemp.prototype.connect = function(){
+        vapeFlow.prototype.connect = function(){
         // with the exception of the null prototype objects use
         // interface properties and access private values
-        $private.get(vapeFlow).verification;
+        $private.get(heatRate).verification;
         }
-        return liquidTemp;
+        return vapeFlow;
         })();
         // no way to access $private here
-        const temperature = new upwindedFibo();*/
+        const temperature = new vapeFlow();*/
                 
 </script>
 
