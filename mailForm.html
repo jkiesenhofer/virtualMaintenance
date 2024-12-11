@@ -74,17 +74,17 @@
         const inductivity = [10384,10946,144,10648,3375,264];
         // sets or accesses a variable initialised as vector
         inductivity.sort();
-        // default order is ascending upon converted elements
-
-        Object.getOwnPropertyDescriptor(pos,from);
+        // default order is ascending upon converted elements      
 
         const capacitive = [10384,10946,4913,10648,3375,144];
         capacitive.sort();
-        for (let j = 0; j < 6; j++) {
-        console.log("The capacitive temperature is",capacitive[j]);
-        }
 
-        var $private = [inductivity,capacitive];
+	var $private = [inductivity,capacitive];
+	
+        for (let j = 0; j < 12; j++) {
+        console.log("The capacitive temperature is",$private[j]);
+        }
+        Object.getOwnPropertyDescriptor(pos,from);
         
         /*const averagedFibo = (function(){
         const $private = new WeakMap();
