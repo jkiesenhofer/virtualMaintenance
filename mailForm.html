@@ -270,13 +270,13 @@
         alert('on');
         };
 
-        function button() {
+        function sort() {
         autorisation.call(this);
         }
 
-        button.prototype = Object.create(autorisation.prototype);
-        button.prototype.constructor = button;
-        button.prototype.virtualFunction = function() {
+        sort.prototype = Object.create(autorisation.prototype);
+        sort.prototype.constructor = sort;
+        sort.prototype.virtualFunction = function() {
         alert('off');
 
 	//console.log(pdfObject.pdfobjectversion);
