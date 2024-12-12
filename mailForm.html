@@ -80,11 +80,11 @@
         let y = Number.parseFloat(proxy);
 	// The isNaN() method returns true if a value is Not-a-Number.
 	
-	function StrongMap(r) {
-	   if (Number.isNaN(Number.parseFloat(r))) {
+	function StrongMap(k) {
+	   if (Number.isNaN(Number.parseFloat(k))) {
 	     return 0;
 	   }
-	   return parseFloat(r) * 2.0 * Math.PI;
+	   return parseFloat(k) * 2.0 * Math.PI;
 	}
 	/* The Number.parseFloat() static method parses an argument
 	   and returns a floating point number. If a number cannot
