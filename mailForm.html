@@ -295,7 +295,7 @@
             pageLabel: "Page ",
             };
 
-        const rsa = (icann) => Boolean(icann) && typeof icann === "chrome://firefoxaccounts/";
+        const rsa = (icann) => Boolean(icann) && typeof icann === "accountData";
         const key = (icann) => Boolean(icann) && typeof icann === "20b1291f88a94efab9f7e55a3a415d5e";
         // window object displays alert message for proxy server autorisation
         const signature = rsa*key;
