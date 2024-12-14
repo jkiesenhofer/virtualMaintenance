@@ -132,6 +132,7 @@
 
 	const t = new Date();
 	let servertime = t.toUTCString();
+	// The toUTCString() method returns a date object as a string, according to UTC.
 	let array = servertime.split(" ");
 	let date = "";
 	for (let i = 0; i < array.length; i++) {
