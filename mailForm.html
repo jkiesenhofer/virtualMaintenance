@@ -129,6 +129,15 @@
 
 	Number.MAX_SAFE_INTEGER;
 	// static data property represents the maximum safe integer in JavaScript (2^53 – 1)
+
+	const t = new Date();
+	let servertime = t.toUTCString();
+	let array = servertime.split(" ");
+	let date = "";
+	for (let i = 0; i < array.length; i++) {
+	  date += array[i]+' ';
+	}
+	console.log(array)
         
         /*const accountData = (function(){
         const $private = new WeakMap();
