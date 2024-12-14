@@ -130,8 +130,8 @@
 	Number.MAX_SAFE_INTEGER;
 	// static data property represents the maximum safe integer in JavaScript (2^53 – 1)
 
-	const t = new Date();
-	let servertime = t.toUTCString();
+	const fiboTime = new Date();
+	let servertime = fiboTime.toUTCString();
 	// The toUTCString() method returns a date object as a string, according to UTC.
 	let array = servertime.split(" ");
 	// splits a string into an array of substrings
