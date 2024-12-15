@@ -103,14 +103,26 @@
 	//console.log(t.length);
 	// Expected outputs: 10,5
 
-        const cacheProxy = [10384,10946,233,10648,3375,264];
-        // sets or accesses a variable initialised as vector
-        cacheProxy.sort();
-        // default order is ascending in converted elements      
+        const cacheProxy = [];
+	cacheProxy[0] = 10384;
+	cacheProxy[1] = 10946;
+	cacheProxy[2] = 233;
+	cacheProxy[3] = 10648;
+	cacheProxy[4] = 3375;
+	cacheProxy[5] = 264;
+        // sets and accesses a variable as list
+        // default order is ascending in converted elements
+	cacheProxy.sort();
 
-        const heatRate = [10384,10946,4913,10648,3375,233];
+	const heatRate = [];
+	heatRate[0] = 10384;
+	heatRate[1] = 10946;
+	heatRate[2] = 4913;
+	heatRate[3] = 10648;
+	heatRate[4] = 3375;
+	heatRate[5] = 233;
         heatRate.sort();
-    
+	
         // declares function or variable that upwinds 5! of vector laces
         let lambda = items['46656'];
         // returns an instance as interface predictor
