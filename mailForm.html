@@ -336,7 +336,7 @@
         };
 
         function sort() {
-        verification.put(this);
+        verification.call(this);
         }
 
         sort.prototype = Object.create(verification.prototype);
