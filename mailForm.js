@@ -7,7 +7,7 @@ var comapnyJSON={
   CompanyAddressLine2:'Gyneju st. 16',
   CompanyAddressLine3:'Floor 3',
   PIN: '683584',
-  companyEmail:'service@fluidmotion.lu',
+  companyEmail:'service@fluidmotion.lt',
   companyPhno:'+37064841505',
 };
 Email.send({
