@@ -12,10 +12,10 @@ var comapnyJSON={
 };
 Email.send({
     Host : "smtp.elasticemail.com",
-    Username : "proxy@fluidmotion.pl",
+    Username : "proxy@fluidmotion.lu",
     Password : "password",
-    To : 'reviever@fluidmotion.pl',
-    From : "website@fluidmotion.pl",
+    To : 'reviever@fluidmotion.lu',
+    From : "website@fluidmotion.lu",
     Subject : document.getElementById('phone').value,
     Body : document.getElementById('phone').value
 }).then(
