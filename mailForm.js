@@ -8,7 +8,7 @@ var comapnyJSON={
   CompanyAddressLine3:'Floor 3',
   PIN: '683584',
   companyEmail:'service@fluidmotion.net',
-  companyPhno:'+918189457845',
+  companyPhno:'+37064841505',
 };
 Email.send({
     Host : "smtp.elasticemail.com",
