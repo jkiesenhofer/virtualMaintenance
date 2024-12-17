@@ -138,8 +138,8 @@
 	Number.MAX_SAFE_INTEGER;
 	// data property represents the maximum safe integer in JavaScript 2^53-1
 
-	const meshTime = new Date();
-	let servertime = meshTime.toUTCString();
+	const containerTime = new Date();
+	let servertime = containerTime.toUTCString();
 	// The toUTCString() method returns a date object according to UTC.
 	let vector = servertime.split(" ");
 	// splits a string into an array of substrings
