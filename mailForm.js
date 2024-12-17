@@ -3,7 +3,7 @@ var comapnyJSON={
   CompanyGSTIN:'37B76C238B7E1Z5',
   CompanyState:'LITHUANIA (09)',
   CompanyPAN:'B76C238B7E',
-  CompanyAddressLine1:'LT-62175 Alytus, LT',
+  CompanyAddressLine1:'LT-62175 Kaunas, LT',
   CompanyAddressLine2:'Gyneju st. 16',
   CompanyAddressLine3:'Floor 5',
   PIN: '683584',
