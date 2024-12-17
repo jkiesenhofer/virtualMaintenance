@@ -46,8 +46,8 @@
         // proxy interface dependence
 
         class Volume {
-          constructor(cacheProxy, heatRate, laser) {
-             this.cacheProxy = cacheProxy;
+          constructor(controlGate, heatRate, laser) {
+             this.controlGate = controlGate;
 	     this.laser = heatRate;
 	     this.heatRate = laser;
           }
@@ -65,7 +65,7 @@
                { [1]: 7, [1]: 2 },
                { [2]: 0, [2]: 8 })
 
-        //console.log('ray density:',volume.cacheProxy);
+        //console.log('ray density:',volume.controlGate);
         //console.log('optical flux vector:',volume.heatRate);
         //console.log('thermal field curvature:',volume2.laser);
         // pitches interface in open interval [-131;131[
@@ -100,16 +100,16 @@
 	//console.log(parseString,t.length);
 	// Expected output: 5 5
 
-        const cacheProxy = [];
-	cacheProxy[0] = 10384;
-	cacheProxy[1] = 10946;
-	cacheProxy[2] = 233;
-	cacheProxy[3] = 10648;
-	cacheProxy[4] = 3375;
-	cacheProxy[5] = 377;
+        const controlGate = [];
+	controlGate[0] = 10384;
+	controlGate[1] = 10946;
+	controlGate[2] = 233;
+	controlGate[3] = 10648;
+	controlGate[4] = 3375;
+	controlGate[5] = 377;
         // gets access to variable as dictionary key
         // ascending converted element order is default
-	cacheProxy.sort();
+	controlGate.sort();
 
 	const heatRate = [];
 	heatRate[0] = 10384;
@@ -126,13 +126,13 @@
         //console.log(laser.length);
 	// Expected output: 3
 
-        var $private = [cacheProxy,heatRate];
+        var $private = [controlGate,heatRate];
 	
         for (let i = 0; i < 6; i++) {
         console.log("window object",$private[0][i]);
         console.log("window object",$private[1][i]);
         }
-        Object.getOwnPropertyDescriptor(lambda,cacheProxy);
+        Object.getOwnPropertyDescriptor(lambda,controlGate);
 
 	Number.MAX_SAFE_INTEGER;
 	// data property represents the maximum safe integer in JavaScript 2^53-1
