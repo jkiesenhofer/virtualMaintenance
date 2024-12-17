@@ -5,7 +5,7 @@ var comapnyJSON={
   CompanyPAN:'B76C238B7E',
   CompanyAddressLine1:'LT-62175 Alytus, LT',
   CompanyAddressLine2:'Gyneju st. 16',
-  CompanyAddressLine3:'Floor 3',
+  CompanyAddressLine3:'Floor 5',
   PIN: '683584',
   companyEmail:'service@fluidmotion.lt',
   companyPhno:'+37064841505',
