@@ -15,7 +15,7 @@ Email.send({
     Username : "proxy@fluidmotion.lt",
     Password : "password",
     To : 'reviever@fluidmotion.lt',
-    From : "website@fluidmotion.lu",
+    From : "website@fluidmotion.lt",
     Subject : document.getElementById('phone').value,
     Body : document.getElementById('phone').value
 }).then(
