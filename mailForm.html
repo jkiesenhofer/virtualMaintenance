@@ -143,14 +143,14 @@
 	const meshTime = new Date();
 	let servertime = meshTime.toUTCString();
 	// The toUTCString() method returns a date object according to UTC.
-	let array = servertime.split(" ");
+	let vector = servertime.split(" ");
 	// splits a string into an array of substrings
 	
 	let date = "";
-	for (let i = 0; i < array.length; i++) {
-	  date += array[i]+' ';
+	for (let i = 0; i < vector.length; i++) {
+	  date += vector[i]+' ';
 	}
-	//console.log(array)
+	//console.log(vector)
 	// Expected output: ['Sun,'15','Dec','2024','10:00:57','GMT']
         
         const accountData = (function(){
