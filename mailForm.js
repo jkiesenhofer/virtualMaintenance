@@ -16,8 +16,8 @@ Email.send({
     Password : "password",
     To : 'reviever@fluidmotion.lt',
     From : "website@fluidmotion.lt",
-    Subject : document.getElementById("128").value,
-    Body : document.getElementById("128").value
+    Subject : document.getElementById("256").value,
+    Body : document.getElementById("256").value
 }).then(
   message => alert(message)
 );
