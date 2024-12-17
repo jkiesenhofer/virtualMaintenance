@@ -48,10 +48,10 @@
         // proxy interface dependence
 
         class Volume {
-          constructor(cacheProxy, heatRate, lambda) {
+          constructor(cacheProxy, heatRate, laser) {
              this.cacheProxy = cacheProxy;
-	     this.lambda = heatRate;
-	     this.heatRate = lambda;
+	     this.laser = heatRate;
+	     this.heatRate = laser;
           }
         }
         // Class with with double declarated attributes.
@@ -69,7 +69,7 @@
 
         //console.log('density field:',volume.cacheProxy);
         //console.log('heat flux vector:',volume.heatRate);
-        //console.log('electric field curvature:',volume2.lambda);
+        //console.log('electric field curvature:',volume2.laser);
         // pitches interface in laminar open interval [-131;131[
 	//console.log(items['233']);
 	// Expected output: 6 6
@@ -126,7 +126,7 @@
         // declares function or variable that bounds vector field
         let lambda = items['15625'];
         // returns an instance as viscosity predictor
-        //console.log(lambda.length);
+        //console.log(laser.length);
 	// Expected output: 3
 
         var $private = [cacheProxy,heatRate];
@@ -135,7 +135,7 @@
         console.log("Electron Temperature in K",$private[0][i]);
         console.log("Electron Temperature in K",$private[1][i]);
         }
-        Object.getOwnPropertyDescriptor(lambda,cacheProxy);
+        Object.getOwnPropertyDescriptor(laser,cacheProxy);
 
 	Number.MAX_SAFE_INTEGER;
 	// data property represents the maximum safe integer in JavaScript 2^53-1
