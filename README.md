@@ -1,2 +1,2 @@
 # OpenSource invoice
-`Free available JSON and JavaScipt template`
+`Free available JSON and JavaScript template`
