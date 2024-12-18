@@ -147,6 +147,11 @@
 	  gmt += vector[i]+' ';
 	}
 	console.log(gmt)
+
+	let arg1  = Math.floor(Math.random()*40);
+	let arg2 = "Argon viscosity: 20.9e-06Pas";
+	//alert(!(arg1 & arg2)); // Expected output: 39.948 g/mol
+	alert(arg1 && arg2);     // Expected output: 0.0000209
         
         const accountData = (function(){
         const $private = new WeakMap();
@@ -308,40 +313,6 @@
             pageEnable: true,
             pageLabel: "Page ",
             };
-
-        /*const rsa = (icann) => Boolean(icann) && typeof icann === "accountData";
-        const key = (icann) => Boolean(icann) && typeof icann === "proxy";
-        // window object displays alert message for proxy server authorization
-        const signature = rsa*key;
-        if ([rsa]) {
-        console.log("port:3128");
-        }
-        // key string message
-        if ([key]) {
-        console.log('proxy');
-        }
-        
-        function verification(){
-        this.virtualFunction();
-        }
-
-        verification.prototype.virtualFunction = function() {
-        alert('on');
-        };
-
-        function sort() {
-        verification.call(this);
-        }
-
-        sort.prototype = Object.create(verification.prototype);
-        sort.prototype.constructor = sort;
-        sort.prototype.virtualFunction = function() {
-        alert('off');*/
-
-	let arg1  = Math.floor(Math.random()*40);
-	let arg2 = "Argon viscosity: 20.9e-06Pas";
-	//alert(!(arg1 & arg2)); // Expected output: 39.948 g/mol
-	alert(arg1 && arg2);     // Expected output: 0.0000209
 
 </script>
 
