@@ -115,6 +115,12 @@
 	heatRate[4] = 3375;
 	heatRate[5] = 233;
         heatRate.sort();
+
+	const factorial = function fac(n) {
+  	  return n < 2 ? 1 : n * fac(n - 1);
+	};
+
+	console.log(factorial(5)); // 120
 	
         // declares function or variable that unbounds chemical flux
         let lambda = items['15625'];
