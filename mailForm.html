@@ -67,6 +67,25 @@
         // pitches interface in open interval [-131;131[
 	//console.log(items['233']);
 	// Expected output: 6 6
+
+	function mixedFraction (e) {
+	  var robotLaser = e.target;
+	  var z = 0;
+
+	  // draw all 10ms
+	  var liquid = setInterval(frame, 10)
+
+	  function frame () {
+	    //robotLaser.style.top = z + '%' ;
+	    z++;
+	    if (z === 20) {
+	      clearInterval (liquid) ;
+	      console.log(z)
+	    }
+	  }
+	}
+	
+	mixedFraction(volume.controlGate);
 	
 	string.point5 = 15625;   // surface tension
         let interface = 377e-00;  // viscosity with 63.55 g/mol
@@ -172,22 +191,6 @@
         return hybris;
         })();
 	//console.log(accountData)
-
-	function mixedFraction (e) {
-	  var robotLaser = e.target;
-	  var z = 0;
-
-	  // draw all 10ms
-	  var liquid = setInterval(frame, 10)
-
-	  function frame () {
-	    robotLaser.style.top = z + '%' ;
-	    z++;
-	    if (z === 20) {
-	      clearInterval (liquid) ;
-	    }
-	  }
-	}
                 
 </script>
 
