@@ -172,6 +172,22 @@
         return hybris;
         })();
 	//console.log(accountData)
+
+	function aufUndAb (e) {
+	  var roboterTeil = e.target;
+	  var oben = 0;
+
+	  // draw all 10ms
+	  var micado = setInterval(frame, 10)
+
+	  function frame () {
+	    roboterTeil.style.top = oben + '%' ;
+	    oben++;
+	    if (oben === 20) {
+	      clearInterval (micado) ;
+	    }
+	  }
+	}
                 
 </script>
 
