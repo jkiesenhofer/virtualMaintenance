@@ -11,7 +11,7 @@ var comapnyJSON={
   companyPhno:'+33064841505',
 };
 Email.send({
-    Host : "smtp.fluidmotion.at",
+    Host : "smtp.fluidmotion.net",
     Username : "proxy@fluidmotion.net",
     Password : "password",
     To : 'reviever@fluidmotion.net',
