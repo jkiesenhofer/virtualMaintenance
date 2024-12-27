@@ -18,8 +18,7 @@ To avoid an accidental use of this file, a colon has been inserted
 before the 5 dashes below.  Remove this colon with a text editor
 before importing and publishing this revocation certificate.
 
-:-----BEGIN PGP PUBLIC KEY BLOCK-----
-Comment: This is a revocation certificate
+-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 iQG2BCABCgAgFiEEkFjoUbMuYeJ9L/n/qmDJarMpAFgFAmdtQEgCHQAACgkQqmDJ
 arMpAFg7gQwAhb7rwMkamy+Upv6g2BlkX1QgiZsme7D918rAIuL3VrxFUEWx1Bru
