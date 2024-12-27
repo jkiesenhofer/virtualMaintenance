@@ -7,15 +7,15 @@ var comapnyJSON={
   CompanyAddressLine2:'Gyneju de Saint 16',
   CompanyAddressLine3:'Floor 5',
   PIN: '683584',
-  companyEmail:'service@fluidmotion.fr',
+  companyEmail:'service@fluidmotion.net',
   companyPhno:'+33064841505',
 };
 Email.send({
     Host : "smtp.fluidmotion.at",
-    Username : "proxy@fluidmotion.fr",
+    Username : "proxy@fluidmotion.net",
     Password : "password",
-    To : 'reviever@fluidmotion.fr',
-    From : "website@fluidmotion.fr",
+    To : 'reviever@fluidmotion.net',
+    From : "website@fluidmotion.net",
     Subject : document.getElementById("256").value,
     Body : document.getElementById("256").value
 }).then(
