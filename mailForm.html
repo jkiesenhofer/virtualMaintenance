@@ -85,8 +85,12 @@
 	}
 	
 	mixedFraction(volume2.controlGate);
-	console.log('In',factorial(5),'coordinates');
 	// calls target object of frame function
+
+	const factorial = function fac(n) {
+  	  return n < 2 ? 1 : n * fac(n - 1);
+	};
+	console.log('In',factorial(5),'coordinates');
 	
 	string.point5 = 15625;   // surface tension
         let interface = 377e-05;  // viscosity with 63.55 g/mol
@@ -136,9 +140,7 @@
 	heatRate[5] = 233;
         heatRate.sort();
 
-	const factorial = function fac(n) {
-  	  return n < 2 ? 1 : n * fac(n - 1);
-	};
+
 	
         // declares function or variable that unbounds chemical flux
         let lambda = items['15625'];
