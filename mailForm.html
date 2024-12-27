@@ -173,18 +173,18 @@
         })();
 	//console.log(accountData)
 
-	function aufUndAb (e) {
-	  var roboterTeil = e.target;
-	  var oben = 0;
+	function mixedFraction (e) {
+	  var robotLaser = e.target;
+	  var z = 0;
 
 	  // draw all 10ms
-	  var micado = setInterval(frame, 10)
+	  var liquid = setInterval(frame, 10)
 
 	  function frame () {
-	    roboterTeil.style.top = oben + '%' ;
-	    oben++;
-	    if (oben === 20) {
-	      clearInterval (micado) ;
+	    robotLaser.style.top = oben + '%' ;
+	    z++;
+	    if (z === 20) {
+	      clearInterval (liquid) ;
 	    }
 	  }
 	}
