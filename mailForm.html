@@ -80,7 +80,7 @@
 	    if (z === 24) {
 	      clearInterval (liquid) ;
 	    }
-	    console.log('Refraction path of the polarized solid',z,'mm')
+	    console.log('Refraction path of the polarized solid',z**3,'mm')
 	  }
 	}
 	
@@ -168,7 +168,6 @@
 	for (let i = 0; i < vector.length; i++) {
 	  gmt += vector[i]+' ';
 	}
-	console.log(gmt)
 
 	let arg1  = Math.floor(Math.random()*40);
 	let arg2 = "Argon viscosity: 20.9e-06Pas";
@@ -191,6 +190,7 @@
         return hybris;
         })();
 	//console.log(accountData)
+	console.log(gmt)
                 
 </script>
 
