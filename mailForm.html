@@ -69,13 +69,13 @@
 	// Expected output: 6 6
 
 	function mixedFraction (e) {
-	  var robotLaser = e.target;
+	  var laserRobot = e.target;
 	  var z = 0;
 	  // draws all 10ms
 	  var liquid = setInterval(frame, 10)
 
 	  function frame () {
-	    //robotLaser.style.top = z + '%' ;
+	    //laserRobot.interpolation.point = z + '%' ;
 	    z++;
 	    if (z === 20) {
 	      clearInterval (liquid) ;
