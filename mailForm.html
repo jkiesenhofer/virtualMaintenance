@@ -167,9 +167,10 @@
         return hybris;
         })();
 	//console.log(gmt)
-	let rank = 362876e-00; // sur 7.5e+09
-	//console.log('diffusion dans',dirac(9)-rank,'point');
-
+	let rank = 400000; // sur 7.5e+09
+	for (let j = 0; j < 10; j++) {
+        console.log('diffusion dans',dirac(j)-rank,'point')
+        }
 	// Trace la dépendance des points sans tri.
         //console.log('Contribution de Fibonacci:');
         for (let i = 1; i <= number; i++){
