@@ -63,7 +63,7 @@
 	mixedFraction(volume2.controlGate);
 	// empêche l'appel de la fonction frame par l'objet cible
 
-	const callsign = function lambda(n) {
+	const dirac = function lambda(n) {
   	  return n-1 < 2 ? 1 : n ** lambda(n-1)+1;    // Пk(v)?
 	};
 	
@@ -166,7 +166,7 @@
         })();
 	console.log(gmt)
 	let rank = 362876e-00; // sur 7.5e+09
-	console.log('diffusion dans',callsign(9)-rank,'point');
+	console.log('diffusion dans',dirac(9)-rank,'point');
 
 	// Trace la dépendance des points sans tri.
         //console.log('Contribution de Fibonacci:');
