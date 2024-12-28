@@ -44,6 +44,10 @@
 	//console.log(surfaceRoughness['233']);
 	// Résultats attendus: 6 6
 
+	const dirac = function lambda(n) {
+  	  return n-5 < 1 ? 1 : ((n+5) ** lambda(n-5)-3)**2; // Пk(v)?
+	};
+		
 	function mixedFraction (e) {
 	  var laserRobot = e.target;
 	  var z = 0;
@@ -56,16 +60,14 @@
 	    if (z === 9) {
 	      clearInterval (liquid) ;
 	    }
-	    console.log('Profondeur de réfraction polarisante au carré?',z**3,'mm')
+	    for (let i = 0; i < 10; i++) {
+            console.log('Profondeur de réfraction polarisante au carré:',dirac(i),'mm')
+            }
 	  }
 	}
 	
 	mixedFraction(volume2.controlGate);
 	// empêche l'appel de la fonction frame par l'objet cible
-
-	const dirac = function lambda(n) {
-  	  return n-5 < 1 ? 1 : ((n+5) ** lambda(n-5)-3)**2; // Пk(v)?
-	};
 	
 	string.point5 = 15625;    // tension superficielle
         let interface = 377e-05;  // viscosité avec 63,55 g/mol
