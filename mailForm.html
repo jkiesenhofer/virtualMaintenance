@@ -45,7 +45,7 @@
 	// Résultats attendus: 6 6
 
 	const dirac = function lambda(n) {
-  	  return n-2 < 1 ? 1 : ((n+2) ** lambda(n-2)-3)**2; // Пk(v)?
+  	  return n-2 < 1 ? 1 : (((n+2) ** lambda(n-2)-3)**3)/40; // Пk(v)?
 	};
 		
 	function mixedFraction (e) {
@@ -167,9 +167,9 @@
         return hybris;
         })();
 	//console.log(gmt)
-	let rank = 400000; // sur 7.5e+09
+	let offset = 40;
 	for (let j = 0; j < 20; j++) {
-        console.log('diffusion dans',dirac(j)-rank,'point')
+        console.log('diffusion dans',dirac(j)-offset,'point')
         }
 	// Trace la dépendance des points sans tri.
         //console.log('Contribution de Fibonacci:');
