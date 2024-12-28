@@ -64,7 +64,7 @@
 	// empêche l'appel de la fonction frame par l'objet cible
 
 	const callsign = function lambda(n) {
-  	  return n < 2 ? 1 : n ** lambda(n-1);    // Пk(v)
+  	  return n-1 < 2 ? 1 : n ** lambda(n-1)-1;    // Пk(v)?
 	};
 	
 	string.point5 = 15625;    // tension superficielle
