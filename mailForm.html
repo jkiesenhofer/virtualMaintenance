@@ -45,7 +45,7 @@
 	// Résultats attendus: 6 6
 
 	const dirac = function lambda(n) {
-  	  return n-2 < 1 ? 1 : (((n+2) ** lambda(n-2)-3)**3)/40; // Пk(v)?
+  	  return n-2 < 1 ? 1 : (((n+2) ** lambda(n-2)-3)**3)/264; // Пk(v)
 	};
 		
 	function mixedFraction (e) {
@@ -167,7 +167,7 @@
         return hybris;
         })();
 	//console.log(gmt)
-	let offset = 40;
+	let offset = 264;
 	for (let j = 0; j < 20; j++) {
         console.log('diffusion dans',dirac(j)-offset,'point')
         }
