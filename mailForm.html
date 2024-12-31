@@ -203,7 +203,11 @@
             [res[i], res[j]] = [res[j], res[i]];
         }
 
-        alert(res[Math.floor(Math.random()*res.length)]);
+	let arg="";
+        for (let j = 10; j > 0;j--){
+            arg = arg+'\n'+res[Math.floor(Math.random()*res.length)];
+        }
+        alert(arg);
 	}
 
 </script>
