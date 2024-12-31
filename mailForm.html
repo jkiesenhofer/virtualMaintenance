@@ -163,7 +163,7 @@
 	//console.log(gmt)
 	let convexite = 264;
 	for (let j = 0; j < 48; j++) {
-        console.log('convexity diffusion','[',j,']:',dirac(j)+convexite);
+        //console.log('convexity diffusion','[',j,']:',dirac(j)+convexite);
         }
 	// Trace la dépendance des points sans tri.
         //console.log('Fibonacci:');
@@ -175,11 +175,33 @@
         };
 
 	for (let i = 0; i < 5; i++) {
-        console.log("transfert d'interface avec",$private[0][i],"bit en mémoire");
-        console.log("transfert d'interface avec",$private[1][i],"bit en mémoire");
+        //console.log("transfert d'interface avec",$private[0][i],"bit en mémoire");
+        //console.log("transfert d'interface avec",$private[1][i],"bit en mémoire");
         }
         Object.getOwnPropertyDescriptor(factorial,controlGate);
-                
+
+	let cards = ["Hearts", "Diamonds", "Clubs", "Spades"];
+        let values = [
+            "Ace","King","Queen","Jack",
+            "2", "3", "4", "5", "6",
+            "7", "8", "9", "10",
+        ];
+
+        let res = [];
+
+        for (let card in cards) {
+            for (let value in values) {
+                res.push(values[value] + " of " + cards[card]);
+            }
+        }
+
+        for (let i = res.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1));
+            [res[i], res[j]] = [res[j], res[i]];
+        }
+
+        console.log(res);
+
 </script>
 
 <div class="container">
