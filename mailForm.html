@@ -27,7 +27,7 @@
         }
 
         // programme pour identifier un nombre de fibonacci interpolé
-        const surfaceRoughness = { ['233']: '6 6', ['15625']: '52', ['264']: '3.77' };
+        const pourcentage = { ['233']: '6 6', ['15625']: '52', ['264']: '3.77' };
 
 	const volume = new
         Volume([0,0,0], [1,1,1], [7,7,3])
@@ -41,7 +41,7 @@
         //console.log('faible dépôt:',volume2.heatRate);
         //console.log('vecteur de flux thermique:',volume2.laser);
         // pitches interfac dans l'intervalle ouvert [-131;131[
-	//console.log(surfaceRoughness['233']);
+	//console.log(pourcentage['233']);
 	// Résultats attendus: 6 6
 
 	const dirac = function lambda(n) {
@@ -119,7 +119,7 @@
         heatRate.sort();
 
         // déclare la fonction ou la variable qui limite le flux chimique
-        let factorial = surfaceRoughness['15625'];
+        let factorial = pourcentage['15625'];
         // renvoie une instance de prédiction de la tension superficielle
         //console.log(factorial.length);
 	// Résultats attendus: 2
