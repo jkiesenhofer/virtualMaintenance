@@ -69,7 +69,9 @@
 	//mixedFraction(volume2.controlGate);
 	// empêche l'appel de la fonction frame par l'objet cible
        
-        class viscosite {
+        const impedance = {};  
+	
+	class viscosite {
            constructor(x, y, z) {
   	      this.x = Number.isNaN(Number.parseFloat(x));
 	      this.y = Number.parseFloat(y);
@@ -81,10 +83,10 @@
         impedance.point5 = 15625;  // tension superficielle
 
         const nogravity = new
-        viscosite(377e-05, 15625, 377e-05) // avec 63,55 g/mol
+        viscosite(377e-05, 233, 377) // avec 63,55 g/mol
         
         //console.log(nogravity);
-        // Résultats attendus: viscosite { x: false, y: 15625, z: 15625 }
+        // Résultats attendus: viscosite { x: false, y: 233, z: 15625 }
 
 	function heatMap(k) {
 	   if (Number.isNaN(Number.parseFloat(k))) {
