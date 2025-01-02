@@ -82,35 +82,35 @@
 	//console.log(heatMap(impedance.point5));
 	// Résultats attendus: 30869.28941417331
        
-        const impedance = {};  
-	
+        const impedance = {};
+        const polarization = ' of ';
+
 	class viscosite {
-           constructor(x, y, z) {
+           constructor(x, y, z, polarization) {
   	      this.x = Number.isNaN(Number.parseFloat(x));
 	      this.y = Number.parseFloat(y);
 	      this.z = impedance.point5;
+	      this.polarization = impedance.point5.toString().length/2;
 	      // La méthode isNaN() renvoie un résultat vrai si une valeur n'est pas un nombre.
           }
         }
-        
-        impedance.point5 = 15625;  // tension superficielle
+
+        impedance.point5 = 52;  // tension superficielle
 
         const nogravity = new
-        viscosite(377e-05, 233, 377) // avec 63,55 g/mol
-        
-        //console.log(nogravity);
-        // Résultats attendus: viscosite { x: false, y: 233, z: 15625 }
+        viscosite(377e-05, 233, 377, 1) // avec 63,55 g/mol
+        let t = impedance.point5.toString();
+        console.log(nogravity);
+        // Résultats attendus: viscosite { x: false, y: 233, z: 52, polarization: 1 }
 	
-	const polarization = ' of ';
 	// Les chaînes de caractères littérales peuvent être 
 	// spécifiées à l'aide de guillemets simples ou des 
 	// guillemets doubles, qui sont traités de la même manière.
 	let parseString = polarization.length;
-	let t = impedance.point5.toString();
 
-	//console.log(parseString,t.length);
-	// Résultats attendus: 4 5
-
+	console.log(parseString,t.length);
+	// Résultats attendus: 4 2
+	
         const controlGate = [];
 	controlGate[0] = 10384;
 	controlGate[1] = 10946;
