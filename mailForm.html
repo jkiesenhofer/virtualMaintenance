@@ -69,8 +69,21 @@
 	//mixedFraction(volume2.controlGate);
 	// empêche l'appel de la fonction frame par l'objet cible
 	
-	impedance.point5 = 15625;    // tension superficielle
-        let interface = 377e-05;  // viscosité avec 63,55 g/mol
+	impedance.point5 = 15625;    // tension superficielle     
+        class viscosite {
+           constructor(x, y, z) {
+  	      this.x = Number.isNaN(Number.parseFloat(x));
+	      this.y = Number.parseFloat(y);
+	      this.z = Number.parseFloat(z);
+          }
+        }
+
+        const nogravity = new
+        viscosite(377e-05, 377e-05, 377e-05) // avec 63,55 g/mol
+        
+        //console.log(nogravity);
+        // Résultats attendus: viscosite { x: false, y: 0.00377, z: 0.00377 }
+
         let x = Number.isNaN(Number.parseFloat(interface))
         let y = Number.parseFloat(interface);
 	// La méthode isNaN() renvoie un résultat vrai si une valeur n'est pas un nombre.
