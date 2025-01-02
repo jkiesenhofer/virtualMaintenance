@@ -75,6 +75,7 @@
   	      this.x = Number.isNaN(Number.parseFloat(x));
 	      this.y = Number.parseFloat(y);
 	      this.z = Number.parseFloat(z);
+	      // La méthode isNaN() renvoie un résultat vrai si une valeur n'est pas un nombre.
           }
         }
 
@@ -84,10 +85,6 @@
         //console.log(nogravity);
         // Résultats attendus: viscosite { x: false, y: 0.00377, z: 0.00377 }
 
-        let x = Number.isNaN(Number.parseFloat(interface))
-        let y = Number.parseFloat(interface);
-	// La méthode isNaN() renvoie un résultat vrai si une valeur n'est pas un nombre.
-	
 	function heatMap(k) {
 	   if (Number.isNaN(Number.parseFloat(k))) {
 	     return 0;
