@@ -68,6 +68,19 @@
 	
 	//mixedFraction(volume2.controlGate);
 	// empêche l'appel de la fonction frame par l'objet cible
+
+	function heatMap(k) {
+	   if (Number.isNaN(Number.parseFloat(k))) {
+	     return 0;
+	   }
+	   return parseFloat(k) * 2.0 * Math.PI;
+	}
+	/* La méthode statique Number.parseFloat() transforme un argument en un 
+           nombre à virgule flottante et renvoie un nombre à virgule. 
+           Si un nombre ne peut pas contribuer à l'argument, elle renvoie NaN. */
+
+	//console.log(heatMap(impedance.point5));
+	// Résultats attendus: 98174.77042468103
        
         const impedance = {};  
 	
@@ -88,18 +101,7 @@
         //console.log(nogravity);
         // Résultats attendus: viscosite { x: false, y: 233, z: 15625 }
 
-	function heatMap(k) {
-	   if (Number.isNaN(Number.parseFloat(k))) {
-	     return 0;
-	   }
-	   return parseFloat(k) * 2.0 * Math.PI;
-	}
-	/* La méthode statique Number.parseFloat() transforme un argument en un 
-           nombre à virgule flottante et renvoie un nombre à virgule. 
-           Si un nombre ne peut pas contribuer à l'argument, elle renvoie NaN. */
 
-	//console.log(heatMap(impedance.point5));
-	// Résultats attendus: 98174.77042468103
 	
 	const polarization = ' of ';
 	// Les chaînes de caractères littérales peuvent être 
