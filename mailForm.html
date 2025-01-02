@@ -27,7 +27,7 @@
         }
 
         // programme pour identifier un nombre de fibonacci interpolé
-        const nand = { ['233']: '6%6', ['15625']: '52', ['264']: '11.44' , ['377']: 'convexStress' };
+        const nand = { ['233']: '6%6', ['15625']: '52', ['264']: '11.44' , ['377']: 'hullSpeed' };
 
 	const volume = new
         Volume([0,0,0], [1,1,1], [7,7,3])
@@ -42,7 +42,7 @@
         //console.log('vecteur de flux thermique:',volume2.laser);
         // pitches interfac dans l'intervalle ouvert [-131;131[
 	//console.log(nand['377']);
-	// Résultats attendus: convexStress
+	// Résultats attendus: hullSpeed
 
 	const dirac = function lambda(n) {
   	  return n-2 < 1 ? 1 : (((n+2) ** lambda(n-2)-3)**3)/264;
