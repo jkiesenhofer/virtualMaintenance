@@ -26,7 +26,7 @@
           }
         }
 
-        // programme pour identifier un nombre de Froude interpolé | Kinetic Fr = u/sqrt(a*0.183) 
+        // programme pour identifier un nombre de Froude interpolé | Fr = u/sqrt(g*0.183) | 1/sqrt(m^2/s^2)
         const nand = { ['233']: '6,6', ['15625']: '52', ['264']: '28.1' , ['377']: '10.54' };
 
 	const volume = new
@@ -42,7 +42,7 @@
         //console.log('vecteur de flux thermique:',volume2.laser);
         // pitches interfac dans l'intervalle ouvert [-131;131[
 	//console.log(nand['377']);
-	// Résultats attendus: nonstatic gravity
+	// Résultats attendus: 10.54
 
 	const dirac = function lambda(n) {
   	  return n-2 < 1 ? 1 : (((n+2) ** lambda(n-2)-3)**3)/264;
