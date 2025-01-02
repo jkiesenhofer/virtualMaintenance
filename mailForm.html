@@ -89,8 +89,8 @@
            constructor(x, y, z, polarization) {
   	      this.x = Number.isNaN(Number.parseFloat(x));
 	      this.y = Number.parseFloat(y);
-	      this.z = impedance.point5;
-	      this.polarization = impedance.point5.toString().length/2;
+	      this.z = impedance.surface;
+	      this.polarization = impedance.surface.toString().length/2;
 	      // La méthode isNaN() renvoie un résultat vrai si une valeur n'est pas un nombre.
           }
         }
