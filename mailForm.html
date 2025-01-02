@@ -49,13 +49,13 @@
 	};
 		
 	function mixedFraction (e) {
-	  var laserRobot = e.target;
+	  var kineticFroude = e.target;
 	  var z = 0;
 	  // tire toutes les 10ms
 	  var liquid = setInterval(frame, 10)
 
 	  function frame () {
-	    //laserRobot.interpolation.point = z + '%' ;
+	    //kineticFroude.interpolation.point = z + '%' ;
 	    z++;
 	    if (z === 9) {
 	      clearInterval (liquid) ;
