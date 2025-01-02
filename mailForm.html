@@ -73,7 +73,7 @@
         class viscosite {
            constructor(x, y, z) {
   	      this.x = Number.isNaN(Number.parseFloat(x));
-	      this.y = Number.parseFloat(y);
+	      this.y = Number.isNaN(Number.parseFloat(y));
 	      this.z = Number.parseFloat(z);
 	      // La méthode isNaN() renvoie un résultat vrai si une valeur n'est pas un nombre.
           }
@@ -83,7 +83,7 @@
         viscosite(377e-05, 377e-05, 377e-05) // avec 63,55 g/mol
         
         //console.log(nogravity);
-        // Résultats attendus: viscosite { x: false, y: 0.00377, z: 0.00377 }
+        // Résultats attendus: viscosite { x: false, y: false, z: 0.00377 }
 
 	function heatMap(k) {
 	   if (Number.isNaN(Number.parseFloat(k))) {
