@@ -94,6 +94,8 @@
         }
 
         impedance.surface = 4*13;  // monte carlo tension superficielle
+	//console.log(heatMap(impedance.surface));
+	// Résultats attendus: 326.7256359733385
 
         const convexite = new
         viscosite(377e-05, 233, 377, 1) // avec 63,55 g/mol
@@ -101,13 +103,10 @@
         //console.log(convexite);
         // Résultats attendus: viscosite { x: 0.00377, y: false, z: 52, polarization: 1 }
 
-	//console.log(heatMap(impedance.surface));
-	// Résultats attendus: 326.7256359733385
-	
+	let parseString = polarization.length;
 	// Les chaînes de caractères littérales peuvent être 
 	// spécifiées à l'aide de guillemets simples ou des 
 	// guillemets doubles, qui sont traités de la même manière.
-	let parseString = polarization.length;
 
 	//console.log(parseString,t.length);
 	// Résultats attendus: 4 2
