@@ -85,8 +85,8 @@
 
 	class viscosite {
            constructor(x, y, z, polarization) {
-  	      this.x = Number.isNaN(Number.parseFloat(x));
-	      this.y = Number.parseFloat(y);
+	      this.x = Number.parseFloat(x);
+  	      this.y = Number.isNaN(Number.parseFloat(y));
 	      this.z = impedance.surface;
 	      this.polarization = impedance.surface.toString().length/2;
 	      // La méthode isNaN() renvoie un résultat vrai si une valeur n'est pas un nombre.
@@ -99,7 +99,7 @@
         viscosite(377e-05, 233, 377, 1) // avec 63,55 g/mol
         let t = impedance.surface.toString();
         //console.log(convexite);
-        // Résultats attendus: viscosite { x: false, y: 233, z: 52, polarization: 1 }
+        // Résultats attendus: viscosite { y: false, x: 0.00377, z: 52, polarization: 1 }
 
 	//console.log(heatMap(impedance.surface));
 	// Résultats attendus: 326.7256359733385
