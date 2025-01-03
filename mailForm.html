@@ -52,13 +52,13 @@
 	};
 		
 	function mixedFraction (p) {
-	  var kineticFroude = p.virtual;
+	  var kineticP = p.virtual;
 	  var z = 0;
 	  // tire toutes les 10ms
 	  var liquid = setInterval(frame, 10)
 
 	  function frame () {
-	    //nogravityFroude.interpolation.point = z + '%' ;
+	    //nogravityPressure.interpolation.point = z + '%' ;
 	    z++;
 	    if (z === 9) {
 	      clearInterval (solid) ;
