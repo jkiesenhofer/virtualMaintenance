@@ -45,10 +45,10 @@
 	//console.log(nand['15625']);
 	// Résultats attendus: 52
 
-	const dirac = function lambda(n) {
-	  const q = 1;
-  	  //return n-2 < q ? 0.5*q : (((n+2) ** lambda(n-2)-3)**3)/264;
-	  return n-2 < 0.5*q ? q : (((n+2) ** lambda(v-2)-3)**2)/264;
+	const dirac = function lambda(u) {
+	  const v = 1;
+  	  //return u-2 < v ? 0.5*v : (((u+2) ** lambda(u-2)-3)**3)/264;
+	  return u-2 < 0.5*v ? v : (((u+2) ** lambda(u-2)-3)**2)/264;
 	};
 		
 	function mixedFraction (p) {
