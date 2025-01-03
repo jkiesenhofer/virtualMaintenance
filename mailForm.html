@@ -47,8 +47,8 @@
 
 	const dirac = function lambda(u) {
 	  const v = 1;
-  	  //return u-2 < v ? 0.5*v : (((u+2) ** lambda(u-2)-3)**3)/264;
-	  return u-2 < 0.5*v ? v : (((u+2) ** lambda(u-2)-3)**2)/264;
+  	  //return u-2 < v ? v : (((u+2) ** lambda(u-2)-3)**3)/264;
+	  return u-2 < v ? v : (((u+2) ** lambda(u-2)-3)**2)/264;
 	};
 		
 	function mixedFraction (p) {
