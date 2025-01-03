@@ -46,9 +46,9 @@
 	// Résultats attendus: 52
 
 	const dirac = function lambda(n) {
-	  const e = 1;
-  	  //return n-2 < e ? 0.5*e : (((n+2) ** lambda(n-2)-3)**3)/264;
-	  return n-2 < 0.5*e ? e : (((n+2) ** lambda(n-2)-3)**2)/264;
+	  const q = 1;
+  	  //return n-2 < q ? 0.5*q : (((n+2) ** lambda(n-2)-3)**3)/264;
+	  return n-2 < 0.5*q ? q : (((n+2) ** lambda(n-2)-3)**2)/264;
 	};
 		
 	function mixedFraction (p) {
