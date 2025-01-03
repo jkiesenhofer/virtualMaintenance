@@ -46,13 +46,13 @@
 	// Résultats attendus: 52
 
 	const dirac = function lambda(n) {
-	  const p = 1;
-  	  //return n-2 < p ? 0.5*p : (((n+2) ** lambda(n-2)-3)**3)/264;
-	  return n-2 < 0.5*p ? p : (((n+2) ** lambda(n-2)-3)**2)/264;
+	  const e = 1;
+  	  //return n-2 < e ? 0.5*e : (((n+2) ** lambda(n-2)-3)**3)/264;
+	  return n-2 < 0.5*e ? e : (((n+2) ** lambda(n-2)-3)**2)/264;
 	};
 		
-	function mixedFraction (e) {
-	  var kineticFroude = e.virtual;
+	function mixedFraction (p) {
+	  var kineticFroude = p.virtual;
 	  var z = 0;
 	  // tire toutes les 10ms
 	  var liquid = setInterval(frame, 10)
