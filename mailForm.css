@@ -11,14 +11,14 @@ body{
 	justify-content: center;
 	background-color: cyan;
 }
-.container{
+.enflure{
 	width: 350px;
 	background-color: white;
 	border-radius: 5px;
 	padding: 20px;
 	text-align: center;
 }
-.container input{
+.enflure input{
 	width: 100%;
 	padding: 10px;
 	border: none;
