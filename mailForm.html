@@ -7,9 +7,9 @@
 <script>
 	
 	var lengthDim = {};
-	// la méthode parseInt analyse une valeur sous forme de chaîne de 
-	// caractères et renvoie un float parseString comme invite à omettre l'entrée de l'utilisateur.
-	// const number = parseInt(prompt('Calibrez l'impédance de l'interface avec un film naturel'));
+	// the parseInt method analyzes a value as a string of 
+	// characters and returns a float parseString as a prompt to omit user input.
+	// const number = parseInt(prompt('Calibrate the interface impedance with solid interface'));
 	const number = 22;
         let point1 = 0, point2 = 1, point3;
 
@@ -21,7 +21,7 @@
           }
         }
 
-        // programme pour identifier nombre impédance optique interpolé | v/sqrt(m^2/s^2)
+	// program to identify interpolated optical impedance number | v/sqrt(m^2/s^2)
         const nand = { ['233']: '6,6', ['15625']: '52', ['264']: '28.1' , ['377']: '10.54' };
 
 	const volume = new
@@ -39,12 +39,12 @@
         lengthDim.point5 =  4913;
         lengthDim.point6 =   233;
 
-        //console.log('densité des rayons:',volume.controlGate);
-        //console.log('faible dépôt:',volume2.heatRate);
-        //console.log('vecteur de flux thermique:',volume2.laser);
-        // dicte dans l'intervalle ouvert [-131;131[
+	//console.log('ray density:',volume.controlGate);
+        //console.log('low deposition:',volume2.heatRate);
+        //console.log('heat flux vector:',volume2.laser);
+        // rules the open interval [-131;131[
 	//console.log(nand['15625']);
-	// résultats attendus: 52
+	// expected results: 52
 
 	const dirac = function lambda(u) {
 	  const v = 1;
@@ -55,7 +55,7 @@
 	function mixedFraction (p) {
 	  var pressure = p.virtual;
 	  var z = 0;
-	  // tire toutes les 10ms
+	  // computes every 10ms
 	  var liquid = setInterval(frame, 10)
 
 	  function frame () {
@@ -71,7 +71,7 @@
 	}
 	
 	//mixedFraction(volume2.controlGate);
-	// empêche l'appel de la fonction frame par l'objet destinataire
+	// prevents the destination object from calling the frame function
 
 	function heatMap(k) {
 	   if (Number.isNaN(Number.parseFloat(k))) {
@@ -79,9 +79,9 @@
 	   }
 	   return parseFloat(k) * 2.0 * Math.PI;
 	}
-	/* la méthode statique Number.parseFloat() transforme un argument en un 
-           nombre à virgule flottante et renvoie un nombre à virgule. 
-           Si un nombre ne peut pas contribuer à l'argument, elle renvoie NaN. */
+	/* the static Number.parseFloat() method transforms an argument into a floating-point 
+           floating-point number and returns a floating-point number. 
+           If a number cannot contribute to the argument, it returns NaN. */
        
         const impedance = {};
         const polarization = ' of ';
@@ -92,33 +92,33 @@
   	      this.y = Number.isNaN(Number.parseFloat(y));
 	      this.z = impedance.surface;
 	      this.polarization = impedance.surface.toString().length/2;
-	      // La méthode isNaN() renvoie un résultat vrai si une valeur n'est pas un nombre.
+	      // The isNaN() method returns a true result if a value is not a number.
           }
         }
 
-        impedance.surface = 4*13;  // numérique froude tension superficielle
+        impedance.surface = 4*13;  // digital froude surface tension
 	//console.log(heatMap(impedance.surface));
-	// résultats attendus: 326.7256359733385
+	// expected results: 326.7256359733385
 
-        const convexite = new
-        viscosite(377e-05, 233, 377, 1) // avec 63,55 g/mol
+        const convexity = new
+        viscosity(377e-05, 233, 377, 1) // with 63,55 g/mol
         let t = impedance.surface.toString();
-        //console.log(convexite);
-        // résultats attendus: viscosite { x: 0.00377, y: false, z: 52, polarization: 1 }
+        //console.log(convexity);
+        // expected results: viscosity { x: 0.00377, y: false, z: 52, polarization: 1 }
 
 	let parseString = polarization.length;
-	// les chaînes de caractères littérales peuvent être 
-	// spécifiées à l'aide de guillemets simples ou des 
-	// guillemets doubles, qui sont traités de la même manière.
+	// literal strings can be 
+	// specified using single quotation marks or 
+	// double quotes, which are treated in the same way.
 
 	//console.log(parseString,t.length);
-	// Résultats attendus: 4 2
+	// Expected results: 4 2
 	
         const controlGate = [];
 	controlGate[1] = 10946;
 	controlGate[5] = 377;
-	// accède à la variable en tant que clé de dictionnaire l'ordre 
-        // ascendant des éléments convertis est l'ordre par défaut
+	// accesses the variable as a dictionary key
+        // order of converted elements is default.
 	controlGate.sort();
 
 	const heatRate = [];
@@ -126,22 +126,22 @@
 	heatRate[5] = 233;
         heatRate.sort();
 
-        // déclare la fonction ou la variable qui limite le flux
+        // declares the function or variable that limits the flow
         let factorial = nand['15625'];
-        // renvoie une instance de prédiction de la tension superficielle
+        // returns a surface tension prediction instance
         //console.log(factorial.length);
-	// résultats attendus: 2
+	// expected result: 2
 
         var $private = [controlGate,heatRate];
 	
 	Number.MAX_SAFE_INTEGER;
-	// la propriété data représente l'entier maximum sûr en JavaScript 2^53-1
-
+	// the data property represents the maximum safe integer in JavaScript 2^53-1
+	
 	const containerTime = new Date();
 	let servertime = containerTime.toUTCString();
-	// la méthode toUTCString() renvoie un objet date selon UTC.
+	// the toUTCString() method returns a UTC date object.
 	let vector = servertime.split(" ");
-	// divise une chaîne de caractères en un tableau de sous-chaînes
+	// divides a string into an array of substrings
 	
 	let gmt = "";
 	for (let i = 0; i < vector.length; i++) {
@@ -149,21 +149,21 @@
 	}
 
 	let arg1  = Math.floor(Math.random()*impedance.point5);
-	let arg2 = "Viscosité de l'zink: 20.9e-06Pas";
-	//alert(!(arg1 & arg2)); // Résultats attendus: 39.948 g/mol
-	//alert(arg1 && arg2);     // Résultats attendus: arg2
+	let arg2 = "Viscosity of zink: 20.9e-06Pas";
+	//alert(!(arg1 & arg2)); // expected result: 39.948 g/mol
+	//alert(arg1 && arg2);     // expected result: arg2
         
         const accountData = (function(){
         const $private = new WeakMap();
-        // paires d'éléments ou valeurs traitées
+        // pairs of elements or values processed
         function hybris() {
-        // hybris() crée un objet dans un espace privé
-        // la syntaxe set lie la fonction d'interface à l'objet
+	// hybris() creates an object in a private space
+        // set syntax links the interface function to the object
         $private.set(impedance,{verification:'heatRate'});
         }
         hybris.prototype.connect = function(){
-	// à l'exception du prototype null, les objets ont des 
-	// propriétés d'interface accédant à des valeurs privées
+	// with the exception of the null prototype, all objects have 
+	// interface properties accessing private values.
         $private.get(vector).verification;
         }
         return hybris;
@@ -173,7 +173,7 @@
 	for (let j = 0; j < 48; j++) {
         //console.log('Impedance diffusion','[',j,']:',dirac(j)+lengthdim);
         }
-	// traduit la dépendance des points sans tri
+	// transforms the dependency of points without sorting
         //console.log('Fibonacci:');
         for (let i = 1; i <= number; i++){
         //console.log(point1);
@@ -183,13 +183,13 @@
         };
 
 	for (let i = 0; i < 5; i++) {
-        //console.log("Transfert d'interface avec",$private[0][i],"bit en mémoire");
-        //console.log("Transfert d'interface avec",$private[1][i],"bit en mémoire");
+	//console.log(“Interface transfer with”,$private[0][i], “bit memory”);
+	//console.log(“Interface transfer with”,$private[1][i], “bit memory”);
         }
         Object.getOwnPropertyDescriptor(factorial,controlGate);
 
 	function cards(){
-	// shuffle algorithme de mélange
+	// shuffle mixing algorithm
 	let cards = ["Hearts", "Diamonds", "Clubs", "Spades"];
         let values = [
             "Ace","King","Queen","Jack",
@@ -199,7 +199,7 @@
 
         let res = [];
 
-	// la méthode push() ajoute de nouveaux éléments à la fin d'un tableau.
+	// the push() method adds new elements to the end of an array.
         for (let card in cards) {
             for (let value in values) {
                 res.push(values[value] + " " + cards[card]);
@@ -215,15 +215,13 @@
         for (let j = 2; j > 0;j--){
             arg = arg+'\n'+res[res.length-j];
         }
-	// renvoie les deux cartes du dessus
+	// returns the two top cards
         alert(arg);
 	}
 
 	var keyField = Math.random()
         var virtualValue1 = ((keyField * 1e9) | 0) / 1e9
 	var virtualValue2 = ((keyField * 1e9) | 0) / 1e9
-
-	const chicken = 'none';
 
 </script>
 
