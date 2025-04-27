@@ -21,3 +21,5 @@ Email.send({
 }).then(
   message => alert(message)
 );
+var audio = document.getElementById("customAudio");
+audio.play();
