@@ -1,5 +1,3 @@
-var audio = document.getElementById("customAudio");
-audio.play();
 var comapnyJSON={
   CompanyName:'Fluidmotion Mechatronics SARL',
   CompanyGSTIN:'37B76C238B7E1Z5',
