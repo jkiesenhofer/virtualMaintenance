@@ -149,8 +149,10 @@
 	}
 
 	let arg1  = Math.floor(Math.random()*impedance.surface);
+	// the Math.floor() method is used in scenarios 
+	// where you need to perform integer division
 	let arg2 = "Viscosity of zink: 20.9e-06Pas";
-	//alert(!(arg1 & arg2)); // expected result: 39.948 g/mol
+	//alert(!(arg1 & arg2)); // expected result: true
 	//alert(arg1 && arg2);     // expected result: arg2
         
         const accountData = (function(){
