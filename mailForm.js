@@ -11,13 +11,13 @@ var comapnyJSON={
   companyPhno:'+33064841505',
 };
 Email.send({
-    Host : "smtp.fluidmotion.net",
-    Username : "proxy@fluidmotion.net",
-    Password : "password",
-    To : 'reviever@fluidmotion.net',
-    From : "website@fluidmotion.net",
-    Subject : document.getElementById("256").value,
-    Body : document.getElementById("256").value
+  Host : "smtp.fluidmotion.net",
+  Username : "proxy@fluidmotion.net",
+  Password : "password",
+  To : 'reviever@fluidmotion.net',
+  From : "website@fluidmotion.net",
+  Subject : document.getElementById("256").value,
+  Body : document.getElementById("256").value
 }).then(
   message => alert(message)
 );
@@ -29,12 +29,12 @@ http.createServer((req, res) => {
   const userId = query.user_id;
   const emailId = query.email_id;
 
-  // Speichern Sie die Tracking-Informationen in einer Datenbank
-  console.log(`Tracking-Pixel ausgelöst: User-ID ${userId}, E-Mail-ID ${emailId}`);
+  // Save the tracking information in a database
+  console.log(`Tracking-Pixel released: User-ID ${userId}, E-Mail-ID ${emailId}`);
 
-  // Senden Sie das SVG-Bild als Antwort
+  // Send the SVG image as a reply
   res.writeHead(200, {'Content-Type': 'image/svg+xml'});
   res.end('<svg width="1" height="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="1" fill="#ffffff" /></svg>');
 }).listen(3000, () => {
-  console.log('Server gestartet auf Port 3000');
+  console.log('Server started on port 3000');
 });
