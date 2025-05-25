@@ -23,7 +23,6 @@ Email.send({
 );
 const http = require('http');
 const url = require('url');
-
 http.createServer((req, res) => {
   const query = url.parse(req.url, true).query;
   const userId = query.user_id;
