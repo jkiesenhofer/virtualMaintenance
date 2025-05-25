@@ -12,7 +12,7 @@ var comapnyJSON={
 };
 Email.send({
   Host : "smtp.fluidmotion.net",
-  Username : "proxy@fluidmotion.net",
+  Username : "office@greenjet.at",
   Password : "password",
   To : 'reviever@fluidmotion.net',
   From : "website@fluidmotion.net",
