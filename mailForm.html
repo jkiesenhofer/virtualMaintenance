@@ -231,9 +231,9 @@
         }
         Object.getOwnPropertyDescriptor(factorial,controlGate);
 
-	function cards(){
+	function followers(){
 	// shuffle mixing algorithm
-	let cards = ["Hearts", "Diamonds", "Clubs", "Spades"];
+	let followers = ["Hearts", "Diamonds", "Clubs", "Spades"];
         let values = [
             "Ace","King","Queen","Jack",
             "2", "3", "4", "5", "6",
@@ -243,9 +243,9 @@
         let res = [];
 
 	// the push() method adds new elements to the end of an array.
-        for (let card in cards) {
+        for (let follower in followers) {
             for (let value in values) {
-                res.push(values[value] + " " + cards[card]);
+                res.push(values[value] + " " + followers[follower]);
             }
         }
 
@@ -258,7 +258,7 @@
         for (let j = 2; j > 0;j--){
             arg = arg+'\n'+res[res.length-j];
         }
-	// returns the two top cards
+	// returns the two top followers
         alert(arg);
 	}
 
