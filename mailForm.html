@@ -1,9 +1,11 @@
 <html>
 <head>
-    <link rel="stylesheet" href="mailForm.css">
+    <link rel="stylesheet" href="mailForm_.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
 <img src="https://shorturl.la/pixel/1748056184132141659" width="1" height="1" alt="" />
+<div id="chart" style="width: 100%; height: 500px;"></div>
 <script>
 	
 	var qr = {};
@@ -63,6 +65,21 @@
 	qr.point29 = parseInt("246.167.151.55");
 	qr.point30 = parseInt("73.210.112.159");
 
+        const array = [];
+        array[30]=Object.values(qr);
+        //console.log(array.toString().split("'"));
+        const trace = {
+          x: [48.0167, 51.2215, 9.1885, -122.2054, -122.2054, 121.0410, -122.2054, 13.6500],
+          y: [-123.3832, -123.3832, 14.7047, 6.8624, 15.5325,121.0390, -123.3832, 15.5325],
+          mode: 'markers',
+          type: 'scatter'
+        };
+        const layout = {
+          xaxis: { title: 'Latitude e.g. 16°22′19.00″E' },
+          yaxis: { title: 'Longitude e.g. 48°12′30.00″N' }
+        };
+        // draw the plot
+        Plotly.newPlot('chart', [trace], layout);
 	//console.log('ray density:',volume.controlGate);
         //console.log('low deposition:',volume2.heatRate);
         //console.log('heat flux vector:',volume2.laser);
