@@ -80,9 +80,9 @@
 	  const randomFloat = Math.random() * (max - min) + min;
 	  return parseFloat(randomFloat.toFixed(decimals));
 	}
-	const number = 7;
-	for (let i = 0; i <= number; i++){
-	for (let j = 0; j <= number; j++){
+	const n = 7;
+	for (let i = 0; i <= n; i++){
+	for (let j = 0; j <= n; j++){
 	let x = getRandomFloatFixed(-120, 52, 2);
 	let y = getRandomFloatFixed(-120, 52, 2);
 	//console.log(i,j,x,array[i],array[j]);
@@ -93,8 +93,8 @@
 	//console.log(mapX,mapY)
 	
         const trace = {
-          x: [48.016, 51.221, 9.188, -122.205, -122.205, 121.041, -122.205],
-          y: [-123.3832, -123.3832, 14.7047, 6.8624, 15.5325,121.0390, -123.3832],
+          x: mapX,
+          y: mapY,
           mode: 'markers',
           type: 'scatter'
         };
