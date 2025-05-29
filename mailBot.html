@@ -80,7 +80,7 @@
 	  const randomFloat = Math.random() * (max - min) + min;
 	  return parseFloat(randomFloat.toFixed(decimals));
 	}
-	const n = 7;
+	const n = 1;
 	for (let i = 0; i <= n; i++){
 	for (let j = 0; j <= n; j++){
 	let x = getRandomFloatFixed(-120, 52, 2);
@@ -96,6 +96,7 @@
           x: mapX,
           y: mapY,
           mode: 'markers',
+          marker: {color: 'rgb(17, 157, 255)'},
           type: 'scatter'
         };
         const layout = {
