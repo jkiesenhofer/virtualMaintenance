@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link rel="stylesheet" href="mailForm_.css">
+    <link rel="stylesheet" href="mailForm.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
@@ -78,8 +78,7 @@
           xaxis: { title: 'Latitude e.g. 16°22′19.00″E' },
           yaxis: { title: 'Longitude e.g. 48°12′30.00″N' }
         };
-        // draw the plot
-        Plotly.newPlot('chart', [trace], layout);
+
 	//console.log('ray density:',volume.controlGate);
         //console.log('low deposition:',volume2.heatRate);
         //console.log('heat flux vector:',volume2.laser);
@@ -272,10 +271,11 @@
 
 </script>
 
+<!--
 <audio controls autoplay muted>
         <source src="audio.mp3" type="audio/mp3">
 </audio>
-
+-->
 
 <table border="1" id="myTable">
   <thead>
@@ -373,7 +373,8 @@
         };
         const tableDict = tableToDict("myTable");
         console.log(tableDict);
-
+        // draw the plot
+        Plotly.newPlot('chart', [trace], layout);
 </script>
 
 <!--
