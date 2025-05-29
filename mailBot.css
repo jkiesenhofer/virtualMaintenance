@@ -34,3 +34,8 @@ body{
 background-color: F5F5DC;
 align-items: center;
 }
+.rechtsbuendig {
+    text-align: right;
+    width: 600px;
+    font-size: 12.5px;
+}
