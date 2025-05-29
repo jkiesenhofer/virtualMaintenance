@@ -1,2 +1,2 @@
 # OpenSource Map
-`Free available JSON and JavaScript tracking pixel map`
+`Free available JSON and JavaScript marketing tool`
