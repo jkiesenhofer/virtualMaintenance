@@ -275,6 +275,107 @@
 <audio controls autoplay muted>
         <source src="audio.mp3" type="audio/mp3">
 </audio>
+
+
+<table border="1" id="myTable">
+  <thead>
+    <tr>
+      <th>x</th>
+      <th>IPV4</th>
+      <th>City</th>
+      <th>ID</th>
+      <th>Longitude</th>
+      <th>Error</th>
+      <th>Latitude</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</th>
+      <td>104.18.187.229</td>
+      <td>Vocklabruck</td>
+      <td>104.18.187.229</td>
+      <td>15.5325</td>
+      <td>1.8825°W</td>
+      <td>48.0167</td>
+    </tr>
+    <tr>
+      <td>1</th>
+      <td>109.199.115.41</td>
+      <td>Dusseldorf</td>
+      <td>109.199.115.41</td>
+      <td>6.8624</td>
+      <td>0.0862°W</td>
+      <td>51.2215</td>
+    </tr>
+    <tr>
+      <td>2</th>
+      <td>93.37.250.70</td>
+      <td>Milan</td>
+      <td>93.37.250.70</td>
+      <td>14.7047</td>
+      <td>30.7596°W</td>
+      <td>9.1885</td>
+    </tr>
+    <tr>
+      <td>3</th>
+      <td>65.183.218.91</td>
+      <td>East Cathlamet</td>
+      <td>65.183.218.91</td>
+      <td>-123.3832</td>
+      <td>-168.4022°N</td>
+      <td>-122.2054</td>
+    </tr>
+    <tr>
+      <td>4</th>
+      <td>65.183.218.92</td>
+      <td>Bothell</td>
+      <td>65.183.218.92</td>
+      <td>-123.3832</td>
+      <td>171.1454°N</td>
+      <td>-122.2054</td>
+    </tr>
+    <tr>
+      <td>5</th>
+      <td>58.71.56.79</td>
+      <td>Mandaluyong City</td>
+      <td>58.71.56.79</td>
+      <td>121.0390</td>
+      <td>106.4559°W</td>
+      <td>121.0410</td>
+    </tr>
+    <tr>
+      <td>6</th>
+      <td>65.183.218.94</td>
+      <td>Bothell</td>
+      <td>65.183.218.94</td>
+      <td>-123.3832</td>
+      <td>-75.621°N</td>
+      <td>-122.2054</td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+
+        const tableToDict = (tableId) => {
+        const table = document.getElementById(tableId);
+        const headers = Array.from(table.querySelectorAll("thead th")).map(th => th.textContent.trim());
+        const rows = Array.from(table.querySelectorAll("tbody tr"));
+
+        return rows.map(row => {
+        const cells = Array.from(row.querySelectorAll("td"));
+        return headers.reduce((acc, header, index) => {
+        acc[header] = cells[index].textContent.trim();
+        return acc;
+        }, {});
+        });
+        };
+        const tableDict = tableToDict("myTable");
+        console.log(tableDict);
+
+</script>
+
 <!--
 <div class="bleu">
 	<h2>Black Jack</h2>
