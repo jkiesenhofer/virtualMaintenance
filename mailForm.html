@@ -66,17 +66,18 @@
 	qr.point30 = parseInt("73.210.112.159");
 
         const array = [];
-        array[30]=Object.values(qr);
+        array[6]=Object.values(qr);
         //console.log(array.toString().split("'"));
+        console.log(array)
         const trace = {
-          x: [48.0167, 51.2215, 9.1885, -122.2054, -122.2054, 121.0410, -122.2054, 13.6500],
-          y: [-123.3832, -123.3832, 14.7047, 6.8624, 15.5325,121.0390, -123.3832, 15.5325],
+          x: [48.0167, 51.2215, 9.1885, -122.2054, -122.2054, 121.0410, -122.2054],
+          y: [-123.3832, -123.3832, 14.7047, 6.8624, 15.5325,121.0390, -123.3832],
           mode: 'markers',
           type: 'scatter'
         };
         const layout = {
-          xaxis: { title: 'Latitude e.g. 16°22′19.00″E' },
-          yaxis: { title: 'Longitude e.g. 48°12′30.00″N' }
+          xaxis: { title: 'Pixel latitude' },
+          yaxis: { title: 'Pixel longitude' }
         };
 
 	//console.log('ray density:',volume.controlGate);
