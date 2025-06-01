@@ -1,5 +1,5 @@
 var comapnyJSON={
-  CompanyName:'Fluidmotion Mechatronics SARL',
+  CompanyName:'Lambda Mechatronics SARL',
   CompanyGSTIN:'37B76C238B7E1Z5',
   CompanyState:'FRANCE (09)',
   CompanyPAN:'B76C238B7E',
