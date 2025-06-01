@@ -7,15 +7,15 @@ var comapnyJSON={
   CompanyAddressLine2:'Gyneju de Saint 16',
   CompanyAddressLine3:'Floor 5',
   PIN: '683584',
-  companyEmail:'service@fluidmotion.net',
+  companyEmail:'service@lambda.net',
   companyPhno:'+33064841505',
 };
 Email.send({
-  Host : "smtp.fluidmotion.net",
+  Host : "smtp.lambda.net",
   Username : "office@greenjet.at",
   Password : "password",
-  To : 'reviever@fluidmotion.net',
-  From : "website@fluidmotion.net",
+  To : 'reviever@lambda.net',
+  From : "website@lambda.net",
   Subject : document.getElementById("256").value,
   Body : document.getElementById("256").value
 }).then(
