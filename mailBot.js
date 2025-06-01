@@ -12,7 +12,7 @@ var comapnyJSON={
 };
 Email.send({
   Host : "smtp.lambda.net",
-  Username : "office@greenjet.at",
+  Username : "office@greenjet.shop",
   Password : "password",
   To : 'reviever@lambda.net',
   From : "website@lambda.net",
