@@ -3,7 +3,7 @@ var comapnyJSON={
   CompanyGSTIN:'37B76C238B7E1Z5',
   CompanyState:'FRANCE (09)',
   CompanyPAN:'B76C238B7E',
-  CompanyAddressLine1:'FR-59800 Lille, FR',
+  CompanyAddressLine1:'FR-59800 Lille',
   CompanyAddressLine2:'87 Rue Nationale',
   CompanyAddressLine3:'Floor 5',
   PIN: '683584',
