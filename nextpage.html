@@ -267,10 +267,8 @@
 <audio controls autoplay muted>
         <source src="audio.mp3" type="audio/mp3">
 </audio>
-<div style='text-align: center;'>
-<img src='https://barcode.tec-it.com/barcode.ashx?data=SHA-384-1994&code=Code128&translate-esc=on'/>
-</div>
 -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -285,8 +283,8 @@ margin-right: auto;
 </head>
 <body>
 
-<img id="qr" src="pixelQR.png" width="200px" height="200px" alt="HTML Image">
-
+<img id="qr" src='https://barcode.tec-it.com/barcode.ashx?data=SHA-384-30x7&code=Code128&translate-esc=on' style='text-align: center'/>
+	
 <script> document.getElementById("qr").addEventListener("mouseleave", function() {
          alert("Mauszeiger hat das Element verlassen!");
   	 });
