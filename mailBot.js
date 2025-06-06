@@ -6,7 +6,7 @@ var comapnyJSON={
   CompanyAddressLine1:'NL-2595BM The Hague',
   CompanyAddressLine2:'Prinses Beatrixlaan 582',
   CompanyAddressLine3:'Floor 5',
-  PIN: '683584',
+  ICC-ID: '898709924417112612',
   companyEmail:'service@lambda.net',
   companyPhno:'+3197010580450',
 };
