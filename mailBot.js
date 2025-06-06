@@ -8,7 +8,7 @@ var comapnyJSON={
   CompanyAddressLine3:'Floor 5',
   PIN: '683584',
   companyEmail:'service@lambda.net',
-  companyPhno:'+31064841505',
+  companyPhno:'+3197010580450',
 };
 Email.send({
   Host : "smtp.lambda.net",
