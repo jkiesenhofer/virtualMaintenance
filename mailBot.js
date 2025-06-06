@@ -1,5 +1,5 @@
 var comapnyJSON={
-  CompanyName:'Lambda Mechatronics B.V.',
+  CompanyName:'Lambda Consulting B.V.',
   CompanyGSTIN:'37B76C238B7E1Z5',
   CompanyState:'NETHERLANDS (09)',
   CompanyPAN:'B76C238B7E',
