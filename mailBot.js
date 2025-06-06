@@ -1,14 +1,14 @@
 var comapnyJSON={
   CompanyName:'Lambda Mechatronics SARL',
   CompanyGSTIN:'37B76C238B7E1Z5',
-  CompanyState:'FRANCE (09)',
+  CompanyState:'GERMANY (09)',
   CompanyPAN:'B76C238B7E',
-  CompanyAddressLine1:'FR-59800 Lille',
-  CompanyAddressLine2:'87 Rue Nationale',
+  CompanyAddressLine1:'DE-40547 Düsseldorf',
+  CompanyAddressLine2:'Niederkasseler Lohweg 175, ',
   CompanyAddressLine3:'Floor 5',
   PIN: '683584',
   companyEmail:'service@lambda.net',
-  companyPhno:'+33064841505',
+  companyPhno:'+49064841505',
 };
 Email.send({
   Host : "smtp.lambda.net",
