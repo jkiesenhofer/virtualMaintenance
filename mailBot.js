@@ -4,7 +4,7 @@ var comapnyJSON={
   CompanyState:'GERMANY (09)',
   CompanyPAN:'B76C238B7E',
   CompanyAddressLine1:'DE-40547 Düsseldorf',
-  CompanyAddressLine2:'Niederkasseler Lohweg 175, ',
+  CompanyAddressLine2:'Niederkasseler Lohweg 175',
   CompanyAddressLine3:'Floor 5',
   PIN: '683584',
   companyEmail:'service@lambda.net',
