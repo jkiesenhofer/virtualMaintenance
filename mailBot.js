@@ -2,7 +2,7 @@ var comapnyJSON={
   CompanyName:'Lambda Consulting B.V.',
   CompanyGSTIN:'37B76C238B7E1Z5',
   CompanyState:'NETHERLANDS (09)',
-  CompanyPAN:'B76C238B7E',
+  CompanyPAN:'ATU16090307',
   CompanyAddressLine1:'NL-2595BM The Hague',
   CompanyAddressLine2:'Prinses Beatrixlaan 582',
   CompanyAddressLine3:'Floor 5',
