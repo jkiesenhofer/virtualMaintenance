@@ -8,7 +8,7 @@ var comapnyJSON={
   CompanyAddressLine3:'Floor 5',
   ICC-ID: '898709924417112612',
   companyEmail:'service@lambda.net',
-  companyPhno:'+3197010580450',
+  companyPhno:'+31645479685',
 };
 Email.send({
   Host : "smtp.lambda.net",
