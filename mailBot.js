@@ -4,7 +4,7 @@ var comapnyJSON={
   CompanyState:'NETHERLANDS (09)',
   CompanyPAN:'ATU16090307',
   CompanyAddressLine1:'NL-2595BM The Hague',
-  CompanyAddressLine2:'Prinses Beatrixlaan 582',
+  CompanyAddressLine2:'Pr. Beatrixlaan 582',
   CompanyAddressLine3:'Floor 5',
   ICC-ID: '898709924417112612',
   companyEmail:'service@lambda.net',
