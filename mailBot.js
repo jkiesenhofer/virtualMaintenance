@@ -1,6 +1,6 @@
 var comapnyJSON={
   CompanyName:'Lambda Mechatronics B.V.',
-  CompanyGSTIN:'37B76C238B7E1Z5',
+  CompanyGSTIN:'ATU77591848',
   CompanyState:'Niederlande',
   CompanyPAN:'ATU16090307',
   CompanyAddressLine1:'NL-2595BM, Den Haag',
