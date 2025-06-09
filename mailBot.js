@@ -3,7 +3,7 @@ var comapnyJSON={
   CompanyGSTIN:'37B76C238B7E1Z5',
   CompanyState:'NETHERLANDS (09)',
   CompanyPAN:'ATU16090307',
-  CompanyAddressLine1:'2595 BM Den Haag',
+  CompanyAddressLine1:'NL-2595BM, Den Haag',
   CompanyAddressLine2:'Pr. Beatrixlaan 582',
   CompanyAddressLine3:'Floor 5',
   ICC-ID: '898709924417112612',
