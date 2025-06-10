@@ -1,2 +1,2 @@
 # OpenSource Map
-`Free available JSON and JavaScript tool`
+`JSON and JavaScript quantum photonics tool`
