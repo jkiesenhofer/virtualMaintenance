@@ -5,7 +5,7 @@
 	const number = 22;
         let maintenance1 = 0, maintenance2 = 1, maintenance3;
 
-        class Volume {
+        class Price {
           constructor(revenue, profit, production) {
              this.revenue = revenue;
 	     this.production = profit;
@@ -17,11 +17,11 @@
 	// a cost function depends on the risks regarding maintenance
         const vat = { ['233']: '6,6', ['15625']: 'supplier_x', ['264']: '28.1' , ['377']: '10.54' };
 
-	const volume = new
-        Volume([0,0,0], [1,1,1], [7,7,3])
+	const price = new
+        Price([0,0,0], [1,1,1], [7,7,3])
         
-        const volume2 = new
-        Volume({ [0]: 1223, [0]: 0525 },
+        const price2 = new
+        Price({ [0]: 1223, [0]: 0525 },
                { [1]: 0623, [1]: 1123 },
                { [2]: 0220, [2]: 0523 })
 	
@@ -63,9 +63,9 @@
         //console.log(array.toString().split("'"));
         console.log(array)
 
-	//console.log('socket:',volume.revenue);
-        //console.log('port:',volume2.profit);
-        //console.log('weight:',volume2.production);
+	//console.log('socket:',price.revenue);
+        //console.log('port:',price2.profit);
+        //console.log('weight:',price2.production);
         // rules the open interval [-131;131[
 	//console.log(vat['15625']);
 	// expected results: supplier_x
@@ -94,7 +94,7 @@
 	  }
 	}
 	
-	//mixedCosts(volume2.revenue);
+	//mixedCosts(price2.revenue);
 	// prevents pcb object from calling the frame function
 
 	function carMap(k) {
