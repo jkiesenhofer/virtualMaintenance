@@ -71,7 +71,7 @@
 	//console.log(nand['15625']);
 	// expected results: 52
 
-	const dirac = function costs(u) {
+	const car = function costs(u) {
 	  const v = 1;
   	  //return u-2 < v ? v : (((u+2) ** costs(u-2)-3)**3)/264;
 	  return u-2 < v ? v : (((u+2) ** costs(u-2)-3)**2)/264;
@@ -90,7 +90,7 @@
 	      clearInterval (solid) ;
 	    }
 	    for (let i = 0; i < 80; i++) {
-            console.log(i.toString()+' : '+(dirac(i)+264).toString())
+            console.log(i.toString()+' : '+(car(i)+264).toString())
             }
 	  }
 	}
@@ -200,7 +200,7 @@
 	//console.log(gmt)
 	let id = qr.point9;
 	for (let j = 0; j < 30; j++) {
-        //console.log('Impedance diffusion','[',j,']:',dirac(j)+id);
+        //console.log('Impedance diffusion','[',j,']:',car(j)+id);
         }
 	// transforms the dependency of points without sorting
         //console.log('Fibonacci:');
