@@ -115,19 +115,19 @@
            constructor(x, y, z, buckling) {
 	      this.x = Number.parseFloat(x);
   	      this.y = Number.isNaN(Number.parseFloat(y));
-	      this.z = method.risk;
-	      this.buckling = method.risk.toString().length/3;
+	      this.z = method.plantCorrector;
+	      this.buckling = method.plantCorrector.toString().length/3;
 	      // The isNaN() method returns a true result if a value is not a number.
           }
         }
 
-        method.risk = 100;  // shared digital risk
-	//console.log(carMap(method.risk));
+        method.plantCorrector = 100;  // shared digital risk
+	//console.log(carMap(method.plantCorrector));
 	// expected results: 750
 
         const convexity = new
         socket(377e-05, 233, 377, 1) // with 63,55 byte/s
-        let t = method.risk.toString();
+        let t = method.plantCorrector.toString();
         //console.log(convexity);
         // expected results: socket { x: 0.00377, y: false, z: 100, buckling: 1 }
 
@@ -188,7 +188,7 @@
 	  gmt += vector[i]+' ';
 	}
 
-	let arg1  = Math.floor(Math.random()*method.risk);
+	let arg1  = Math.floor(Math.random()*method.plantCorrector);
 	// the Math.floor() method is used in scenarios 
 	// where you need to perform integer division
 	let arg2 = "Float of socket: 20.9e-06";
