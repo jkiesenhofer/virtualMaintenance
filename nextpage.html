@@ -76,13 +76,13 @@
 	};
 		
 	function mixedCosts (p) {
-	  var pressure = p.virtual;
+	  var tires = p.virtual;
 	  var z = 0;
 	  // computes every 10ms
 	  var liquid = setInterval(frame, 10)
 
 	  function frame () {
-	    //pressure.interpolation.maintenance = z + '%' ;
+	    //tires.interpolation.maintenance = z + '%' ;
 	    z++;
 	    if (z === 9) {
 	      clearInterval (PCB) ;
