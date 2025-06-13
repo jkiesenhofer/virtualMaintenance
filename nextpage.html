@@ -109,14 +109,14 @@
            If a number cannot contribute to the argument, it returns NaN. */
        
         const impedance = {};
-        const polarization = ' of ';
+        const buckling = ' of ';
 
 	class socket {
-           constructor(x, y, z, polarization) {
+           constructor(x, y, z, buckling) {
 	      this.x = Number.parseFloat(x);
   	      this.y = Number.isNaN(Number.parseFloat(y));
 	      this.z = impedance.surface;
-	      this.polarization = impedance.surface.toString().length/2;
+	      this.buckling = impedance.surface.toString().length/2;
 	      // The isNaN() method returns a true result if a value is not a number.
           }
         }
@@ -129,9 +129,9 @@
         socket(377e-05, 233, 377, 1) // with 63,55 byte/s
         let t = impedance.surface.toString();
         //console.log(convexity);
-        // expected results: socket { x: 0.00377, y: false, z: 52, polarization: 1 }
+        // expected results: socket { x: 0.00377, y: false, z: 52, buckling: 1 }
 
-	let parseString = polarization.length;
+	let parseString = buckling.length;
 	// literal strings can be 
 	// specified using single quotation marks or 
 	// double quotes, which are treated in the same way.
