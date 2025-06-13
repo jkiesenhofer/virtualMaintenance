@@ -15,7 +15,7 @@
 
 	// program to identify an interpolated supply chain buckling risk | v/sqrt(m^2/s^2)
 	// a cost function depends on the risks regarding maintenance
-        const nand = { ['233']: '6,6', ['15625']: '52', ['264']: '28.1' , ['377']: '10.54' };
+        const nand = { ['233']: '6,6', ['15625']: 'supplier_x', ['264']: '28.1' , ['377']: '10.54' };
 
 	const volume = new
         Volume([0,0,0], [1,1,1], [7,7,3])
@@ -68,7 +68,7 @@
         //console.log('weight:',volume2.production);
         // rules the open interval [-131;131[
 	//console.log(nand['15625']);
-	// expected results: 52
+	// expected results: supplier_x
 
 	const car = function costs(u) {
 	  const v = 1;
