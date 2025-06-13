@@ -163,7 +163,18 @@
 	// the data property represents the maximum safe integer in JavaScript 2^53-1
 	// maxParse represents the maximum IPV4 space integer
 	
-	console.log($private[0]);
+	const object1 = {
+	  lambda1: profit,
+	  lambda2: revenue
+	};
+
+	const descriptor1 = Object.getOwnPropertyDescriptor(object1, "lambda2");
+	const descriptor2 = Object.getOwnPropertyDescriptor(object1, "lambda1");
+	//console.log(descriptor1.value)
+	// expected result: [ 10946, 377, <4 empty items> ]
+	//console.log(descriptor2.value)
+	// expected result: [ 233, 3375, <4 empty items> ]
+	
 	const containerLabel = new Date();
 	let servertime = containerLabel.toUTCString();
 	// the toUTCString() method returns a UTC date object.
