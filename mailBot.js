@@ -6,7 +6,8 @@ var comapnyJSON={
   CompanyAddressLine1:'AT-4600, Wels',
   CompanyAddressLine2:'Dragonerstraße 29',
   CompanyAddressLine3:'Floor 5',
-  ICC-ID: '044574499105848816',
+  ICC-ID1: '044574499105848816',
+  ICC-ID2: '898709924417112612',
   companyEmail:'service@lambda.net',
   companyPhno:'+44 7475355392',
 };
