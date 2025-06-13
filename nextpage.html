@@ -113,19 +113,19 @@
            constructor(x, y, z, buckling) {
 	      this.x = Number.parseFloat(x);
   	      this.y = Number.isNaN(Number.parseFloat(y));
-	      this.z = impedance.surface;
-	      this.buckling = impedance.surface.toString().length/2;
+	      this.z = impedance.risk;
+	      this.buckling = impedance.risk.toString().length/2;
 	      // The isNaN() method returns a true result if a value is not a number.
           }
         }
 
-        impedance.surface = 4*13;  // digital froude surface tension
-	//console.log(carMap(impedance.surface));
+        impedance.risk = 4*13;  // digital froude risk tension
+	//console.log(carMap(impedance.risk));
 	// expected results: 326.7256359733385
 
         const convexity = new
         socket(377e-05, 233, 377, 1) // with 63,55 byte/s
-        let t = impedance.surface.toString();
+        let t = impedance.risk.toString();
         //console.log(convexity);
         // expected results: socket { x: 0.00377, y: false, z: 52, buckling: 1 }
 
@@ -151,7 +151,7 @@
 
         // declares the function or variable that limits the flow
         let factorial = nand['15625'];
-        // returns a surface tension prediction instance
+        // returns a risk tension prediction instance
         //console.log(factorial.length);
 	// expected result: 2
 
@@ -173,7 +173,7 @@
 	  gmt += vector[i]+' ';
 	}
 
-	let arg1  = Math.floor(Math.random()*impedance.surface);
+	let arg1  = Math.floor(Math.random()*impedance.risk);
 	// the Math.floor() method is used in scenarios 
 	// where you need to perform integer division
 	let arg2 = "Float of socket: 20.9e-06";
