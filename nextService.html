@@ -17,10 +17,10 @@
 	// a cost function depends on the risks regarding maintenance
         const vat = { ['233']: '6,6', ['15625']: 'supplier_x', ['264']: '28.1' , ['377']: '10.54' };
 
-	const price = new
+	const priceA = new
         Price([0,0,0], [1,1,1], [7,7,3])
         
-        const price2 = new
+        const priceB = new
         Price({ [0]: 1223, [0]: 0525 },
               { [1]: 0623, [1]: 1123 },
               { [2]: 0220, [2]: 0523 })
@@ -64,9 +64,9 @@
         //console.log(array.toString().split("'"));
         console.log(array)
 
-	//console.log('socket:',price.revenue);
-        //console.log('port:',price2.profit);
-        //console.log('weight:',price2.production);
+	//console.log('socket:',priceA.revenue);
+        //console.log('port:',priceB.profit);
+        //console.log('weight:',priceB.production);
         // rules the semi-open interval [-131;131[
 	//console.log(vat['15625']);
 	// expected results: supplier_x
@@ -95,7 +95,7 @@
 	  }
 	}
 	
-	//mixedCosts(price2.revenue);
+	//mixedCosts(priceB.revenue);
 	// supply chain object calling the slender structure (car port or socket)
 	// pcb price (convexity) - slender structure (e.g. tire) - buckling
 
