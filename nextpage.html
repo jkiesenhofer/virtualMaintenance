@@ -71,10 +71,10 @@
 	//console.log(nand['15625']);
 	// expected results: 52
 
-	const dirac = function lambda(u) {
+	const dirac = function costs(u) {
 	  const v = 1;
-  	  //return u-2 < v ? v : (((u+2) ** lambda(u-2)-3)**3)/264;
-	  return u-2 < v ? v : (((u+2) ** lambda(u-2)-3)**2)/264;
+  	  //return u-2 < v ? v : (((u+2) ** costs(u-2)-3)**3)/264;
+	  return u-2 < v ? v : (((u+2) ** costs(u-2)-3)**2)/264;
 	};
 		
 	function mixedFraction (p) {
