@@ -3,8 +3,8 @@ var comapnyJSON={
   CompanyVAT:'ATU77591848',
   CompanyState:'Niederlande',
   Registrar:'1API', // semi-applicable agreement
-  CompanyAddressLine1:'AT-4600, Wels',
-  CompanyAddressLine2:'Dragonerstraße 29',
+  CompanyAddressLine1:'Cardiff, CF10 3NS',
+  CompanyAddressLine2:'Dragonerstreet 29',
   CompanyAddressLine3:'Floor 5',
   ICC-ID1:'044574499105848816',
   ICC-ID2:'898709924417112612',
