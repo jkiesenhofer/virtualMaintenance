@@ -9,7 +9,7 @@ var comapnyJSON={
   ICC-ID1: '044574499105848816',
   ICC-ID2: '898709924417112612',
   companyEmail:'service@lambda.net',
-  companyPhno:'+44 7475355392',
+  companyPhone:'+44 7475355392',
 };
 Email.send({
   Host : "smtp.lambda.net",
