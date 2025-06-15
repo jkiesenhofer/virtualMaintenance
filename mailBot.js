@@ -2,7 +2,7 @@ var comapnyJSON={
   CompanyName:'Lambda Mechatronics B.V.',
   CompanyVAT:'ATU77591848',
   CompanyState:'Niederlande',
-  Registrar:'1API GmbH', // Agreement not applicable to connected SAP-modules
+  Registrar:'1API GmbH', // semi-applicable agreement
   CompanyAddressLine1:'AT-4600, Wels',
   CompanyAddressLine2:'Dragonerstraße 29',
   CompanyAddressLine3:'Floor 5',
