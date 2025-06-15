@@ -2,6 +2,7 @@ var comapnyJSON={
   CompanyName:'Lambda Mechatronics B.V.',
   CompanyGSTIN:'ATU77591848',
   CompanyState:'Niederlande',
+  Registrar: '1API GmbH',
   CompanyAddressLine1:'AT-4600, Wels',
   CompanyAddressLine2:'Dragonerstraße 29',
   CompanyAddressLine3:'Floor 5',
