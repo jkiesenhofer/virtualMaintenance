@@ -1,4 +1,4 @@
-var comapanyJSON={
+var companyJSON={
   CompanyName:'Lambda Mechatronics B.V.',
   CompanyVAT:'DE367715299',
   Registrar:'1api.net', // semi-applicable agreement
