@@ -1,6 +1,6 @@
 var companyJSON={
   CompanyName:'Lambda Mechatronics B.V.',
-  CompanyVAT:'FN 599182 a',
+  CompanyUID:'FN 599182 a',
   Registrar:'1api.net', // semi-applicable agreement
   CompanyAddressLine1:'GB-Cardiff, CF10 3NS',
   CompanyAddressLine2:'Dragonerstreet 29',
