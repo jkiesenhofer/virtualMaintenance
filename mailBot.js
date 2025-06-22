@@ -3,7 +3,7 @@ var companyJSON={
   CompanyUID:'FN 599182 a',
   Registrar:'1api.net', // semi-applicable agreement
   CompanyAddressLine1:'CN-Urumqi, 4600',
-  CompanyAddressLine2:'Dragonerstreet 29',
+  CompanyAddressLine2:'Dragonerstraße 29',
   CompanyAddressLine3:'Floor 5',
   ICC-ID1:'044574499105848816',
   ICC-ID2:'898709924417112612',
