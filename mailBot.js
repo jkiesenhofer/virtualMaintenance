@@ -10,7 +10,7 @@ var companyJSON={
 };
 Email.send({
   Host : "smtp.lambda.net",
-  Username : "info@gneenev.com",
+  Username : "gao@truthful-logistics.com",
   Password : "password",
   To : 'reviever@lambda.net',
   From : "website@lambda.net",
