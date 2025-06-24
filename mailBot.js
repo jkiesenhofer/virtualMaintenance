@@ -12,7 +12,7 @@ var companyJSON={
 };
 Email.send({
   Host : "smtp.lambda.net",
-  Username : "office@greenjet.shop",
+  Username : "info@gneenev.com",
   Password : "password",
   To : 'reviever@lambda.net',
   From : "website@lambda.net",
