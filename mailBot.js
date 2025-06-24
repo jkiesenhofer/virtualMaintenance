@@ -10,7 +10,7 @@ var companyJSON={
   companyPhone:'+44 7475355392',
 };
 Email.send({
-  Host : "smtp.lambda.net",
+  Host : "ns8.cnmsn.net",
   Username : "gao@truthful-logistics.com",
   Password : "password",
   To : 'reviever@lambda.net',
