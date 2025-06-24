@@ -2,7 +2,7 @@ var companyJSON={
   CompanyName:'Lambda Mechatronics B.V.',
   CompanyUID:'FN 599182 a',
   Registrar:'1api.net', // semi-applicable agreement
-  CompanyAddressLine:'67 Hongshan Rd, Luohe, 830092',
+  CompanyAddressLine:'67 Hongshan Rd, Hangcheng, 830092',
   ICC-ID1:'044574499105848816',
   ICC-ID2:'898709924417112612',
   companyEmail:'service@lambda.net',
