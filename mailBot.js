@@ -10,7 +10,7 @@ var companyJSON={
 };
 Email.send({
   Host : "dns21.hichina.com",
-  Username : "gao@truthful-logistics.com",
+  Username : "ddsales3@cars-in-china.com",
   Password : "password",
   To : 'reviever@lambda.net',
   From : "website@lambda.net",
