@@ -1,5 +1,5 @@
 var companyJSON={
-  CompanyName:'Lambda Mechatronics B.V.',
+  CompanyName:'Lambda Informatics B.V.',
   CompanyUID:'FN 599182 a',
   Registrar:'1api.net', // semi-applicable agreement
   CompanyAddressLine:'Van Leijenberghlaan 15, 1082',
