@@ -1,8 +1,14 @@
 <script>
+	//this will make object1 point to the memory location that object2 is pointing at
+    object1 = object2;
+
+    //this will make object2 point to the memory location that object1 is pointing at 
+    function myfunc(object2){}
+    myfunc(object1);
 	// the parseInt method analyzes a value as string of 
 	// characters and returns a float parseString as prompt omits user input.
 	// const number = parseInt(prompt('Calibrates a supply chain impedance'));
-        let hash = '24b2b1d79a96c55d12baea27902490f4';
+    let hash = '24b2b1d79a96c55d12baea27902490f4';
 	const number = 22;
         let maintenance1 = 0, maintenance2 = 1, maintenance3;
 
@@ -16,12 +22,12 @@
 
 	// program to identify an interpolated supply chain buckling risk | USD per car
 	// a cost function depends on the risks regarding maintenance
-        const vat = { ['233']: '6,6', ['15625']: 'supplier_x', ['264']: '28.1' , ['377']: '10.54' };
+    const vat = { ['233']: '6,6', ['15625']: 'supplier_x', ['264']: '28.1' , ['377']: '10.54' };
 
 	const priceA = new
         Price([0,0,0], [1,1,1], [7,7,3])
         
-        const priceB = new
+    const priceB = new
         Price({ [0]: 1223, [0]: 0525 },
               { [1]: 0623, [1]: 1123 },
               { [2]: 0220, [2]: 0523 })
@@ -59,21 +65,21 @@
 	part.maintenance29 = parseInt("246.167.151.55");
 	part.maintenance30 = parseInt("73.210.112.159");
 
-        const array = [];
-        array[6]=Object.values(part);
+    const array = [];
+    array[6]=Object.values(part);
 	// parseFloat/Int() of list
-        //console.log(array.toString().split("'"));
-        console.log(array)
+    //console.log(array.toString().split("'"));
+    console.log(array)
 
 	//console.log('socket:',priceA.revenue);
-        //console.log('port:',priceB.profit);
-        //console.log('weight:',priceB.production);
-        // rules the semi-open interval [-131;131[
+    //console.log('port:',priceB.profit);
+    //console.log('weight:',priceB.production);
+    // rules the semi-open interval [-131;131[
 	//console.log(vat['15625']);
 	// expected results: supplier_x
 
 	const car = function costs(u) {
-	  const v = 1;
+	const v = 1;
   	  //return u-2 < v ? v : (((u+2) ** costs(u-2)-3)**3)/264;
 	  return u-2 < v ? v : (((u+2) ** costs(u-2)-3)**2)/264;
 	};
@@ -114,7 +120,7 @@
         const buckling = 'structure';
 
 	class socket {
-           constructor(x, y, z, buckling) {
+          constructor(x, y, z, buckling) {
 	      this.x = Number.parseFloat(x);
   	      this.y = Number.isNaN(Number.parseFloat(y));
 	      this.z = method.plantCorrector;
@@ -159,7 +165,7 @@
         //console.log(factorial.length/5);
 	// expected result: 2
 
-        var $private = [revenue,profit];
+    var $private = [revenue,profit];
 	var maxParse = Math.pow(2,32);
 	
 	Number.MAX_SAFE_INTEGER;
