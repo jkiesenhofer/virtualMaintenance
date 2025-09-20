@@ -1136,9 +1136,6 @@
             <name>Word.Application.11</name>
             <name>Word.Application.12</name>
             <name>Word.Application.14</name>
-            <name>Word.Basic</name>
-            <name>Word.Basic.8</name>
-            <name>Word.Basic.9</name>
          </controls>
          <permissions>x</permissions>
          <enabled>1</enabled>
@@ -1235,3 +1232,4 @@
       </rule>
    </rules>
 </SAP>
+
