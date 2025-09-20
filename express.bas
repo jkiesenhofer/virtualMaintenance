@@ -21,7 +21,7 @@ On Error GoTo 0
 ' has field names
 blnHasFieldNames = False
 
-' Replace C:\Filename.xls with the actual path and filename
+' Replace C:\Filename.accdb with the actual path and filename
 strPathFile = "https://jkiesenhofer.bplaced.net/SharePoint/Database11.accdb"
 
 ' Replace tablename with the real name of the table into which
