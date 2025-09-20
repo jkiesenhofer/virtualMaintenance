@@ -22,7 +22,7 @@ On Error GoTo 0
 blnHasFieldNames = False
 
 ' Replace C:\Filename.xls with the actual path and filename
-strPathFile = "C:\Users\nb652\OneDrive - CNH Industrial\1. PIP\Ad Hoc\ECONOMICS\Claims by Partnr.xlsx"
+strPathFile = "https://jkiesenhofer.bplaced.net/SharePoint/Database11.accdb"
 
 ' Replace tablename with the real name of the table into which
 ' the data are to be imported
