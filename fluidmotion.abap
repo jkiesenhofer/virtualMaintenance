@@ -57,3 +57,11 @@ START-OF-SELECTION.
             ls_sflight-fldate,
             ls_sflight-price.
   ENDLOOP.
+
+CALL FUNCTION 'Z_CHECK_EXIT'
+  EXPORTING
+    EXITNUM               = '85'
+    ARGUMENT              = VBAK-VKORG
+  EXCEPTIONS
+    NOT_FOUND_OR_INACTIVE = 1
+    OTHERS                = 2.
