@@ -32,11 +32,6 @@ LOOP AT lt_mitarbeiter INTO ls_mitarbeiter.
            'Ort:', ls_mitarbeiter-ort.
 ENDLOOP.
 
-REPORT zend_script.
-
-WRITE 'end of script!'.
-
-
 REPORT zflugdaten.
 
 TABLES: sflight.
