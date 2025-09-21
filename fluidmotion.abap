@@ -31,3 +31,7 @@ LOOP AT lt_mitarbeiter INTO ls_mitarbeiter.
            'Name:', ls_mitarbeiter-name,
            'Ort:', ls_mitarbeiter-ort.
 ENDLOOP.
+
+REPORT zend_script.
+
+WRITE 'end of script!'.
