@@ -35,3 +35,25 @@ ENDLOOP.
 REPORT zend_script.
 
 WRITE 'end of script!'.
+
+
+REPORT zflugdaten.
+
+TABLES: sflight.
+
+SELECT-OPTIONS: s_carrid FOR sflight-carrid.
+
+DATA: lt_sflight TYPE TABLE OF sflight,
+      ls_sflight TYPE sflight.
+
+START-OF-SELECTION.
+  SELECT * FROM sflight
+    INTO TABLE @lt_sflight
+    WHERE carrid IN @s_carrid.
+
+  LOOP AT lt_sflight INTO ls_sflight.
+    WRITE: / ls_sflight-carrid,
+            ls_sflight-connid,
+            ls_sflight-fldate,
+            ls_sflight-price.
+  ENDLOOP.
