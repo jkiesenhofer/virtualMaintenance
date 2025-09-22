@@ -1,3 +1,14 @@
+DATA ganzzahl TYPE i.
+ganzzahl = 400.
+
+DATA(ganzzahl) = 400.
+
+DATA(ganzzahl1) = 400.
+DATA(ganzzahl2) = 3.
+DATA(ergebnis) = ganzzahl1 + ganzzahl2.
+
+DATA(zeichenkette) = 'Hello ' && 'Visa'.
+
 REPORT zbeispiel_intern_table.
 
 TYPES: BEGIN OF ty_mitarbeiter,
